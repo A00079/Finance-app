@@ -1,164 +1,42 @@
 <template>
-  <section class="text-gray-600 body-font">
-    <div
-      class="container px-20 py-14 mx-auto rounded-3xl"
-      style="background: #f1f5ff"
-    >
-      <div class="flex flex-wrap -m-4 text-center">
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 bg-white px-4 py-6 rounded-lg">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M8 17l4 4 4-4m-4-5v9"></path>
-              <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
-            <p class="leading-relaxed">Downloads</p>
+  <div class="p-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-20 place-items-center">
+      <div class="relative">
+        <div class="productInfo productInfo1 text-gray-600">
+          <div class="absolute capitalize font-semibold top-4 left-6">
+            Credit cards
           </div>
+          From 50+ options, choose a card matching your lifestyle & needs
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 bg-white px-4 py-6 rounded-lg">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">1.3K</h2>
-            <p class="leading-relaxed">Users</p>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 bg-white px-4 py-6 rounded-lg">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-              <path
-                d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
-              ></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
-            <p class="leading-relaxed">Files</p>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 bg-white px-4 py-6 rounded-lg">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
-            <p class="leading-relaxed">Places</p>
-          </div>
+        <div class="absolute top-10 -right-10">
+          <img src="/img/credit.svg" alt="" width="150px" />
         </div>
       </div>
+      <div class="relative">
+        <div class="productInfo productInfo2">
+          <div class="absolute top-4 left-6">
+            HEADING
+          </div>
+          slanted div text nad uashuia ioa asdasd asda dasdada adada ada d
+          <div class="absolute bottom-4">
+            Learn more --->
+          </div>
+        </div>
 
-      <div class="flex flex-wrap -m-4 text-center">
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 bg-white px-4 py-6 rounded-lg">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M8 17l4 4 4-4m-4-5v9"></path>
-              <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
-            <p class="leading-relaxed">Downloads</p>
-          </div>
+        <div class="absolute top-10 -right-10">
+          <img src="/img/credit.svg" alt="" width="150px" />
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 bg-white px-4 py-6 rounded-lg">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">1.3K</h2>
-            <p class="leading-relaxed">Users</p>
-          </div>
+      </div>
+      <div class="relative">
+        <div class="productInfo productInfo3">
+          slanted div text nad uashuia ioa asdasd asda dasdada adada ada d
         </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 bg-white px-4 py-6 rounded-lg">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-              <path
-                d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
-              ></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
-            <p class="leading-relaxed">Files</p>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 bg-white px-4 py-6 rounded-lg">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
-            <p class="leading-relaxed">Places</p>
-          </div>
+        <div class="absolute top-10 -right-10">
+          <img src="/img/credit.svg" alt="" width="150px" />
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 <script>
 export default {
@@ -166,4 +44,67 @@ export default {
 };
 </script>
 <style scoped>
+.productInfo {
+  position: relative;
+  border-radius: 30px;
+  color: #494973;
+  /* display: inline-block; */
+  padding: 4em 8em 4em 1em;
+  overflow: hidden;
+  width: 300px;
+}
+
+.productInfo1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f0faf9;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(-20deg);
+  z-index: -1;
+}
+
+.productInfo2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f6f0fc;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(-20deg);
+  z-index: -1;
+}
+
+.productInfo3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffeff9;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(-20deg);
+  z-index: -1;
+}
 </style>
