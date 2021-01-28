@@ -3,8 +3,10 @@
     <HomeScreen />
     <AfterHomeBanner />
     <GetCreditScore />
+    <products />
     <OurProducts />
     <WhyChooseUs />
+    <Footer />
   </div>
 </template>
 <script>
@@ -14,15 +16,19 @@ import AfterHomeBanner from "@/components/Banners/AfterHomeBanner/AfterHomeBanne
 import GetCreditScore from "@/components/GetCreditScore/GetCreditScore.vue";
 import OurProducts from "@/components/OurProducts/OurProducts.vue";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs.vue";
+import Footer from '../components/Footer/Footer.vue';
+import Products from '../components/OurProducts/Products.vue';
 
 export default {
-  name: 'Home',
-  components:{
+  name: "Home",
+  components: {
     HomeScreen,
     AfterHomeBanner,
     GetCreditScore,
     OurProducts,
-    WhyChooseUs
-  }
-}
+    WhyChooseUs,
+    Footer,
+    Products,
+  },
+};
 </script>
