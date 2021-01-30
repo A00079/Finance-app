@@ -6,7 +6,7 @@
       <div
         class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
       >
-        <h1
+        <!-- <h1
           style="
             background: linear-gradient(to right, #f7971e, #ffd200);
             -webkit-background-clip: text;
@@ -15,13 +15,13 @@
           class="title-font tracking-tight font-extrabold text-5xl mb-2 font-medium relative"
         >
           <p class="skeleton-box">Lead a comfortable life!</p>
-        </h1>
-        <h1
+        </h1> -->
+        <!-- <h1
           class="title-font tracking-tight font-extrabold text-2xl mb-4 font-medium text-gray-500"
         >
           We take care of your finances.
-        </h1>
-        <div class="mt-8">
+        </h1> -->
+        <!-- <div class="mt-8">
           <button
             class="inline-flex h-12 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg relative"
           >
@@ -59,17 +59,7 @@
               <span class="mt-8"> have got their Credit Scores for FREE!</span>
             </div>
           </div>
-          <!-- <button
-            class="ml-0 inline-flex  py-2 px-6  text-lg"
-          >
-            <lottie
-              :options="defaultOptions2"
-              :height="60"
-              :width="270"
-              v-on:animCreated="handleAnimation"
-            />
-          </button> -->
-        </div>
+        </div> -->
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
         <img
