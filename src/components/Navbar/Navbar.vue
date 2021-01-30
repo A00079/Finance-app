@@ -1,7 +1,7 @@
 <template>
   <section class="navbar">
     <div
-      style="z-index: 9999;"
+      style="z-index: 9999;box-shadow: 0 15px 20px rgb(0,0,0,0.9)"
       class="w-36 h-36 rounded-full shadow-xl fixed -top-7 -left-6 inline-flex items-center justify-center bg-indigo-800 text-gray-400"
     >
       <img

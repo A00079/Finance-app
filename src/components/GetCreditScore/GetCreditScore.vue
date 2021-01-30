@@ -16,7 +16,10 @@
           </p>
         </div>
         <div class="flex flex-wrap -m-4 text-center cursor-pointer">
-          <div class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg" v-show="firstIconFlag">
+          <div
+            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 bg-white border-gray-200 shadow-xl rounded-lg"
+            v-show="firstIconFlag"
+          >
             <div class="px-4 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions2"
@@ -29,7 +32,10 @@
               </p>
             </div>
           </div>
-          <div class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg" v-show="secondIconFlag">
+          <div
+            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            v-show="secondIconFlag"
+          >
             <div class="px-4 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions3"
@@ -42,7 +48,10 @@
               </p>
             </div>
           </div>
-          <div class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg" v-show="thirdIconFlag">
+          <div
+            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            v-show="thirdIconFlag"
+          >
             <div class="px-4 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions4"
@@ -55,7 +64,10 @@
               </p>
             </div>
           </div>
-          <div class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg" v-show="fourIconFlag">
+          <div
+            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            v-show="fourIconFlag"
+          >
             <div class="px-4 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions5"
@@ -63,12 +75,13 @@
                 :width="190"
                 v-on:animCreated="handleAnimation"
               />
-              <p class="leading-relaxed text-md font-medium">
-                Better offers.
-              </p>
+              <p class="leading-relaxed text-md font-medium">Better offers.</p>
             </div>
           </div>
-          <div class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg" v-show="fiveIconFlag">
+          <div
+            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            v-show="fiveIconFlag"
+          >
             <div class="px-4 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions6"
@@ -79,6 +92,7 @@
               <p class="leading-relaxed text-md font-medium">
                 Get Your Score Now.
               </p>
+              <button class="inline-flex text-white mt-2 bg-pink-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Check Now</button>
             </div>
           </div>
         </div>
@@ -98,6 +112,11 @@
           </infinite-slide-bar>
         </div>
       </div>
+      <img
+        style="z-index: -1"
+        src="/img/leftwave.png"
+        class="absolute top-0 -left-10"
+      />
     </section>
   </div>
 </template>

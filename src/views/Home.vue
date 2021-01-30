@@ -4,8 +4,9 @@
     <AfterHomeBanner />
     <GetCreditScore />
     <products />
-    <OurProducts />
+    <!-- <OurProducts /> -->
     <WhyChooseUs />
+    <AboutUs />
     <Footer />
   </div>
 </template>
@@ -18,6 +19,7 @@ import OurProducts from "@/components/OurProducts/OurProducts.vue";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs.vue";
 import Footer from '../components/Footer/Footer.vue';
 import Products from '../components/OurProducts/Products.vue';
+import AboutUs from '../components/AboutUs/AboutUs.vue';
 
 export default {
   name: "Home",
@@ -29,6 +31,7 @@ export default {
     WhyChooseUs,
     Footer,
     Products,
+    AboutUs
   },
 };
 </script>
