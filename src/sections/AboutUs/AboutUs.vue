@@ -1,7 +1,7 @@
 <template>
   <section class="text-gray-600 body-font relative">
     <div
-      class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center"
+      class="container mx-auto flex px-5  md:flex-row flex-col items-center"
     >
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
         <lottie

@@ -3,7 +3,7 @@
     <div class="px-0 py-24">
       <div class="flex flex-row bg-gray-800 mb-16 w-full">
         <h4
-          class="text-xl text-white title-font mr-36 pl-28 mt-5 ml-5 tracking-tight font-extrabold"
+          class="text-xl text-white title-font mr-12 pl-28 mt-5 ml-5 tracking-tight font-semibold"
         >
           Our Patners
         </h4>

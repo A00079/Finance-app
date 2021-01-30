@@ -67,29 +67,29 @@
         <div class="grid grid-cols-3 place-items-center gap-10">
           <div
             @mouseover="handleContentChange('Credit Card','credit-card.svg')"
-            class="bg-white w-32 h-32 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
+            class="bg-white w-28 h-28 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
           >
             <div class="flex-column space-y-2 py-3">
               <img
                 src="/img/credit-card.svg"
                 alt=""
-                class="h-14 w-14 mx-auto"
+                class="h-12 w-12 mx-auto"
               />
-              <div class="text-center pt-4 font-medium">Credit Card</div>
+              <div class="text-center pt-2 font-medium text-sm">Credit Card</div>
             </div>
           </div>
           <div class="flex-column space-y-6">
             <div
               @mouseover="handleContentChange('Health Care','healthcare.svg')"
-              class="bg-white w-32 h-32 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
+              class="bg-white w-28 h-28 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
             >
               <div class="flex-column space-y-2 py-3">
                 <img
                   src="/img/healthcare.svg"
                   alt=""
-                  class="h-14 w-14 mx-auto"
+                  class="h-12 w-12 mx-auto"
                 />
-                <div class="text-center pt-4 font-medium">Health Care</div>
+                <div class="text-center pt-2 font-medium text-sm">Health Care</div>
               </div>
             </div>
             <!-- <div class="container bg-gray-200 w-32 h-32">
@@ -99,26 +99,26 @@
             </div> -->
             <div
               @mouseover="handleContentChange('Personal Loan','personalloan.png')"
-              class="bg-white w-32 h-32 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
+              class="bg-white w-28 h-28 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
             >
               <div class="flex-column space-y-2 py-3">
                 <img
                   src="/img/personalloan.png"
                   alt=""
-                  class="h-14 w-14 mx-auto"
+                  class="h-12 w-12 mx-auto"
                 />
-                <div class="text-center pt-0 font-medium">
+                <div class="text-center pt-0 font-medium text-sm">
                   Personal <br />Loan
                 </div>
               </div>
             </div>
             <div
               @mouseover="handleContentChange('Home Loan','homeloan.png')"
-              class="bg-white w-32 h-32 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
+              class="bg-white w-28 h-28 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
             >
               <div class="flex-column space-y-2 py-3">
-                <img src="/img/homeloan.png" alt="" class="h-14 w-14 mx-auto" />
-                <div class="text-center pt-4 font-medium">Home Loan</div>
+                <img src="/img/homeloan.png" alt="" class="h-12 w-12 mx-auto" />
+                <div class="text-center pt-2 font-medium text-sm">Home Loan</div>
               </div>
             </div>
           </div>
@@ -126,54 +126,54 @@
             <div class="flex-column space-y-6">
               <div
                 @mouseover="handleContentChange('Life Insurance','lifeinsurance.png')"
-                class="bg-white w-32 h-32 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
+                class="bg-white w-28 h-28 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
               >
                 <div class="flex-column space-y-2 py-3">
                   <img
                     src="/img/lifeinsurance.png"
                     alt=""
-                    class="h-14 w-14 mx-auto"
+                    class="h-12 w-12 mx-auto"
                   />
-                  <div class="text-center pt-0 font-medium">
+                  <div class="text-center pt-0 font-medium text-sm">
                     Life <br />Insurance
                   </div>
                 </div>
               </div>
               <div
                 @mouseover="handleContentChange('Savings Account','savings.png')"
-                class="bg-white w-32 h-32 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
+                class="bg-white w-28 h-28 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
               >
                 <div class="flex-column space-y-2 py-3">
                   <img
                     src="/img/savings.png"
                     alt=""
-                    class="h-14 w-14 mx-auto"
+                    class="h-12 w-12 mx-auto"
                   />
-                  <div class="text-center pt-0 font-medium">
+                  <div class="text-center pt-0 font-medium text-sm">
                     Savings <br />Account
                   </div>
                 </div>
               </div>
               <div
                 @mouseover="handleContentChange('Mutual Funds','homeloan.png')"
-                class="bg-white w-32 h-32 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
+                class="bg-white w-28 h-28 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
               >
                 <div class="flex-column space-y-2 py-3">
                   <img
                     src="/img/homeloan.png"
                     alt=""
-                    class="h-14 w-14 mx-auto"
+                    class="h-12 w-12 mx-auto"
                   />
-                  <div class="text-center pt-4 font-medium">Mutual Funds</div>
+                  <div class="text-center pt-2 font-medium text-sm">Mutual Funds</div>
                 </div>
               </div>
               <div
                 @mouseover="handleContentChange('Demat Account','growth.png')"
-                class="bg-white w-32 h-32 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
+                class="bg-white w-28 h-28 rounded-2xl border-2 shadow-xl border-gray-200 cursor-pointer"
               >
                 <div class="flex-column space-y-2 py-3">
-                  <img src="/img/growth.png" alt="" class="h-14 w-14 mx-auto" />
-                  <div class="text-center pt-4 font-medium">Demat Account</div>
+                  <img src="/img/growth.png" alt="" class="h-12 w-12 mx-auto" />
+                  <div class="text-center pt-2 font-medium text-sm">Demat Account</div>
                 </div>
               </div>
             </div>
@@ -182,9 +182,9 @@
       </div>
     </div>
     <img
-      style="z-index: -1; height: 600px; width: 700px"
+      style="z-index: -1; height: 540px; width: 600px"
       src="/img/rightbluewave.png"
-      class="absolute top-0 -right-10"
+      class="absolute top-10 -right-10"
     />
   </div>
 </template>

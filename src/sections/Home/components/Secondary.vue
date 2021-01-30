@@ -1,6 +1,6 @@
 <template>
   <section class="text-gray-600 body-font">
-    <div class="container px-5 py-2 mx-auto">
+    <div class="container px-5 py-2 mt-8  mx-auto">
       <div class="flex flex-wrap -m-4 text-center">
         <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('credit-card')">
           <div

@@ -3,9 +3,9 @@
     <home />
     <credit-score />
     <our-products />
-    <!-- <why-us /> -->
+    <why-us />
     <about-us />
-    <testimonials />
+    <!-- <testimonials /> -->
   </div>
 </template>
 <script>
