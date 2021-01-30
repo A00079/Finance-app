@@ -51,7 +51,6 @@
 </template>
 <script>
 import animationData from "@/assets/animations/man-running.json";
-
 export default {
   name: "SubNavBanner",
   data() {
@@ -64,19 +63,15 @@ export default {
     handleAnimation: function (anim) {
       this.anim = anim;
     },
-
     stop: function () {
       this.anim.stop();
     },
-
     play: function () {
       this.anim.play();
     },
-
     pause: function () {
       this.anim.pause();
     },
-
     onSpeedChange: function () {
       this.anim.setSpeed(this.animationSpeed);
     },
@@ -87,7 +82,6 @@ export default {
 #loading {
   -webkit-animation: rotation 2s infinite linear;
 }
-
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(359deg);
@@ -96,7 +90,6 @@ export default {
     -webkit-transform: rotate(0deg);
   }
 }
-
 .vert-move {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 0.7s infinite alternate;

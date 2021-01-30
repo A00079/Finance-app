@@ -1,41 +1,5 @@
 <template>
-  <div class="mt-20">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
-      <div
-        class="flex justify-between p-6 bg-indigo-600 items-center md:rounded-r-xl"
-      >
-        <div class="text-white">
-          g try-hard pitchfork pour-over freegan heirloom
-        </div>
-        <div>
-          <lottie
-            :options="defaultOptions"
-            :height="150"
-            :width="150"
-            v-on:animCreated="handleAnimation"
-          />
-        </div>
-      </div>
-      <div>
-        <div
-          class="flex justify-between p-6 bg-indigo-600 items-center md:rounded-l-xl"
-        >
-          <div class="text-white">
-            g try-hard pitchfork pour-over freegan heirloom
-          </div>
-          <div>
-            <lottie
-              :options="defaultOptions2"
-              :height="150"
-              :width="150"
-              v-on:animCreated="handleAnimation"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <section class="text-gray-600 body-font">
+  <section class="text-gray-600 body-font">
     <div class="px-0 py-24 mx-auto">
       <div class="flex flex-wrap -m-4">
         <div class="p-4 pr-2 md:w-1/2 w-full">
@@ -53,7 +17,7 @@
                     01 Credit Card
                   </h1>
                   <p class="mb-0 leading-relaxed text-xl font-bold text-white">
-                    g try-hard pitchfork pour-over freegan heirloom
+                    Copper mug try-hard pitchfork pour-over freegan heirloom
                   </p>
                 </div>
                 <div class="mt-2">
@@ -69,9 +33,7 @@
           </div>
         </div>
         <div class="p-4 pl-2 md:w-1/2 w-full">
-          <div
-            class="h-full bg-indigo-600 p-8 pt-0 pb-0 pr-0 rounded shadow-lg"
-          >
+          <div class="h-full bg-indigo-600 p-8 pt-0 pb-0 pr-0 rounded shadow-lg">
             <section class="text-gray-600 body-font">
               <div
                 class="container mx-auto flex px-5 py-0 md:flex-row flex-col items-center"
@@ -85,7 +47,7 @@
                     02 Credit Card
                   </h1>
                   <p class="mb-0 leading-relaxed text-xl font-bold text-white">
-                    g try-hard pitchfork pour-over freegan heirloom
+                    Copper mug try-hard pitchfork pour-over freegan heirloom
                   </p>
                 </div>
                 <div class="mt-2">
@@ -102,14 +64,13 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 </template>
 <script>
 import animationData from "@/assets/animations/hand-shake-business-deal.json";
 import animationData2 from "@/assets/animations/creative-time.json";
-
 export default {
-  name: "AfterHomeBanner",
+  name: "InfoBars",
   data() {
     return {
       defaultOptions: { animationData: animationData, loop: true },
@@ -117,26 +78,23 @@ export default {
     };
   },
   methods: {
-    handleAnimation: function(anim) {
+    handleAnimation: function (anim) {
       this.anim = anim;
     },
-
-    stop: function() {
+    stop: function () {
       this.anim.stop();
     },
-
-    play: function() {
+    play: function () {
       this.anim.play();
     },
-
-    pause: function() {
+    pause: function () {
       this.anim.pause();
     },
-
-    onSpeedChange: function() {
+    onSpeedChange: function () {
       this.anim.setSpeed(this.animationSpeed);
     },
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+</style>

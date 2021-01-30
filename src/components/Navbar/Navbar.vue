@@ -1,7 +1,7 @@
 <template>
   <section class="navbar">
     <div
-      style="z-index: 9999;"
+      style="z-index: 9999;box-shadow: 0 15px 20px rgb(0,0,0,0.9)"
       class="w-36 h-36 rounded-full shadow-xl fixed -top-7 -left-6 inline-flex items-center justify-center bg-indigo-800 text-gray-400"
     >
       <img
@@ -18,11 +18,11 @@
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span class="sr-only">Workflow</span>
-              <img
+              <!-- <img
                 class="h-8 w-auto sm:h-10"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                 alt=""
-              />
+              /> -->
             </a>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
@@ -59,7 +59,6 @@
                 <span>Solutions</span>
                 <!--
               Heroicon name: chevron-down
-
               Item active: "text-gray-600", Item inactive: "text-gray-400"
             -->
                 <svg
@@ -93,7 +92,6 @@
 
               <!--
             'Solutions' flyout menu, show/hide based on flyout menu state.
-
             Entering: "transition ease-out duration-200"
               From: "opacity-0 translate-y-1"
               To: "opacity-100 translate-y-0"
@@ -240,7 +238,6 @@
                 <span>More</span>
                 <!--
               Heroicon name: chevron-down
-
               Item active: "text-gray-600", Item inactive: "text-gray-400"
             -->
                 <svg
@@ -274,7 +271,6 @@
 
               <!--
             'More' flyout menu, show/hide based on flyout menu state.
-
             Entering: "transition ease-out duration-200"
               From: "opacity-0 translate-y-1"
               To: "opacity-100 translate-y-0"
@@ -383,8 +379,9 @@
               Sign in
             </a>
             <a
+              style="background:#FB117E"
               href="#"
-              class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+              class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-indigo-700"
             >
               Sign up
             </a>
@@ -394,7 +391,6 @@
 
       <!--
     Mobile menu, show/hide based on mobile menu state.
-
     Entering: "duration-200 ease-out"
       From: "opacity-0 scale-95"
       To: "opacity-100 scale-100"

@@ -87,17 +87,14 @@
         </div>
       </div>
     </div>
-    <SubNavBanner />
   </section>
 </template>
 <script>
 import animationData from "@/assets/animations/empreendedor-cor.json";
 import animationData2 from "@/assets/animations/speedometer.json";
 import animationData3 from "@/assets/animations/award.json";
-
-import SubNavBanner from "./SubHome.vue";
 export default {
-  name: "HomeScreen",
+  name: "Primary",
   data() {
     return {
       defaultOptions: { animationData: animationData, loop: true },
@@ -107,26 +104,19 @@ export default {
     };
   },
   mounted() {},
-  components: {
-    SubNavBanner,
-  },
   methods: {
     handleAnimation: function (anim) {
       this.anim = anim;
     },
-
     stop: function () {
       this.anim.stop();
     },
-
     play: function () {
       this.anim.play();
     },
-
     pause: function () {
       this.anim.pause();
     },
-
     onSpeedChange: function () {
       this.anim.setSpeed(this.animationSpeed);
     },
