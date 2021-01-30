@@ -96,9 +96,9 @@
       </div>
       <div class="relative">
         <div class="flex justify-around">
-          <div class="absolute top-20 left-40">
+          <div class="absolute top-28 left-36">
             <div
-              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-4 h-full items-center"
+              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-2 h-full items-center"
             >
               <svg
                 fill="none"
@@ -106,7 +106,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 p-2 w-14 bg-green-200 h-14 flex-shrink-0 mr-4 rounded-3xl"
+                class="text-indigo-500 p-2 w-12 bg-green-200 h-12 flex-shrink-0 mr-4 rounded-3xl"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -116,16 +116,16 @@
                 <span class="title-font font-medium"
                   >Authentic</span
                 ><br />
-                <span class="text-base font-semibold"
+                <span class="text-sm font-semibold"
                   >Blue bottle crucifix.</span
                 >
               </div>
             </div>
           </div>
           <div></div>
-          <div class="absolute top-20 -right-10">
+          <div class="absolute top-28 right-12">
             <div
-              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-4 h-full items-center"
+              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-2 h-full items-center"
             >
               <svg
                 fill="none"
@@ -133,7 +133,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 p-2 w-14 bg-green-200 h-14 flex-shrink-0 mr-4 rounded-3xl"
+                class="text-indigo-500 p-2 w-12 bg-green-200 h-12 flex-shrink-0 mr-4 rounded-3xl"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -143,7 +143,7 @@
                 <span class="title-font font-medium"
                   >Authentic</span
                 ><br />
-                <span class="text-base font-semibold"
+                <span class="text-sm font-semibold"
                   >Blue bottle crucifix.</span
                 >
               </div>
@@ -151,9 +151,9 @@
           </div>
         </div>
         <div class="flex justify-around">
-          <div class="absolute top-60 left-24">
+          <div class="absolute top-64 left-20">
             <div
-              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-4 h-full items-center"
+              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-2 h-full items-center"
             >
               <svg
                 fill="none"
@@ -161,7 +161,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 p-2 w-14 bg-green-200 h-14 flex-shrink-0 mr-4 rounded-3xl"
+                class="text-indigo-500 p-2 w-12 bg-green-200 h-12 flex-shrink-0 mr-4 rounded-3xl"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -171,16 +171,16 @@
                 <span class="title-font font-medium"
                   >Authentic</span
                 ><br />
-                <span class="text-base font-semibold"
+                <span class="text-sm font-semibold"
                   >Blue bottle crucifix.</span
                 >
               </div>
             </div>
           </div>
           <div></div>
-          <div class="absolute top-60 -right-28">
+          <div class="absolute top-64 -right-7">
             <div
-              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-4 h-full items-center"
+              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-2 h-full items-center"
             >
               <svg
                 fill="none"
@@ -188,7 +188,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 p-2 w-14 bg-green-200 h-14 flex-shrink-0 mr-4 rounded-3xl"
+                class="text-indigo-500 p-2 w-12 bg-green-200 h-12 flex-shrink-0 mr-4 rounded-3xl"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -198,7 +198,7 @@
                 <span class="title-font font-medium"
                   >Authentic</span
                 ><br />
-                <span class="text-base font-semibold"
+                <span class="text-sm font-semibold"
                   >Blue bottle crucifix.</span
                 >
               </div>
@@ -206,9 +206,9 @@
           </div>
         </div>
         <div class="flex justify-around">
-          <div class="absolute top-96 left-40">
+          <div class="absolute top-96 left-36">
             <div
-              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-4 h-full items-center"
+              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-2 h-full items-center"
             >
               <svg
                 fill="none"
@@ -216,7 +216,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 p-2 w-14 bg-green-200 h-14 flex-shrink-0 mr-4 rounded-3xl"
+                class="text-indigo-500 p-2 w-12 bg-green-200 h-12 flex-shrink-0 mr-4 rounded-3xl"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -226,16 +226,16 @@
                 <span class="title-font font-medium"
                   >Authentic</span
                 ><br />
-                <span class="text-base font-semibold"
+                <span class="text-sm font-semibold"
                   >Blue bottle crucifix.</span
                 >
               </div>
             </div>
           </div>
           <div></div>
-          <div class="absolute top-96 -right-10">
+          <div class="absolute top-96 right-12">
             <div
-              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-4 h-full items-center"
+              class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-2 h-full items-center"
             >
               <svg
                 fill="none"
@@ -243,7 +243,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="3"
-                class="text-indigo-500 p-2 w-14 bg-green-200 h-14 flex-shrink-0 mr-4 rounded-3xl"
+                class="text-indigo-500 p-2 w-12 bg-green-200 h-12 flex-shrink-0 mr-4 rounded-3xl"
                 viewBox="0 0 24 24"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -253,7 +253,7 @@
                 <span class="title-font font-medium"
                   >Authentic</span
                 ><br />
-                <span class="text-base font-semibold"
+                <span class="text-sm font-semibold"
                   >Blue bottle crucifix.</span
                 >
               </div>
@@ -261,10 +261,10 @@
           </div>
         </div>
         <img
-          class="object-cover object-center rounded"
+          class="object-cover object-center rounded  mt-6"
           alt="hero"
           src="/img/whywecircle.png"
-          style="max-width: 140% !important"
+          style="max-width: 120% !important"
         />
       </div>
     </div>

@@ -1,8 +1,13 @@
 <template>
-  <div>
+  <div class="relative">
     <Primary />
     <Secondary />
     <InfoBars />
+    <img
+      style="z-index: -1"
+      src="/img/wave.png"
+      class="absolute -top-5 right-0"
+    />
   </div>
 </template>
 <script>

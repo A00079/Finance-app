@@ -4,7 +4,7 @@
       class="text-gray-600 body-font relative h-screen"
       v-view.once="onceHandler"
     >
-      <div class="container px-5 py-16 mx-auto" :key="rerender">
+      <div class="container px-24 py-16 mx-auto" :key="rerender">
         <div class="flex flex-col text-center w-full mb-20">
           <h1
             class="sm:text-3xl md:text-4xl font-medium title-font mb-4 text-indigo-900"
@@ -17,14 +17,14 @@
         </div>
         <div class="flex flex-wrap -m-4 text-center cursor-pointer">
           <div
-            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 bg-white border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 bg-white border-gray-200 shadow-xl rounded-lg"
             v-show="firstIconFlag"
           >
-            <div class="px-4 py-6 rounded-lg">
+            <div class="px-2 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions2"
-                :height="190"
-                :width="190"
+                :height="150"
+                :width="150"
                 v-on:animCreated="handleAnimation"
               />
               <p class="leading-relaxed text-md font-medium">
@@ -33,14 +33,14 @@
             </div>
           </div>
           <div
-            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
             v-show="secondIconFlag"
           >
-            <div class="px-4 py-6 rounded-lg">
+            <div class="px-2 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions3"
-                :height="190"
-                :width="190"
+                :height="150"
+                :width="150"
                 v-on:animCreated="handleAnimation"
               />
               <p class="leading-relaxed text-md font-medium">
@@ -49,14 +49,14 @@
             </div>
           </div>
           <div
-            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
             v-show="thirdIconFlag"
           >
-            <div class="px-4 py-6 rounded-lg">
+            <div class="px-2 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions4"
-                :height="190"
-                :width="190"
+                :height="150"
+                :width="150"
                 v-on:animCreated="handleAnimation"
               />
               <p class="leading-relaxed text-md font-medium">
@@ -65,28 +65,28 @@
             </div>
           </div>
           <div
-            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
             v-show="fourIconFlag"
           >
-            <div class="px-4 py-6 rounded-lg">
+            <div class="px-2 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions5"
-                :height="190"
-                :width="190"
+                :height="150"
+                :width="150"
                 v-on:animCreated="handleAnimation"
               />
-              <p class="leading-relaxed text-md font-medium">Better offers.</p>
+              <p class="leading-relaxed text-md font-medium">Get The Best Offers For You.</p>
             </div>
           </div>
           <div
-            class="p-4 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
             v-show="fiveIconFlag"
           >
-            <div class="px-4 py-6 rounded-lg">
+            <div class="px-2 py-6 rounded-lg">
               <lottie
                 :options="defaultOptions6"
-                :height="190"
-                :width="190"
+                :height="150"
+                :width="150"
                 v-on:animCreated="handleAnimation"
               />
               <p class="leading-relaxed text-md font-medium">

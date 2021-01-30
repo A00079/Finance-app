@@ -1,10 +1,10 @@
 <template>
   <section class="text-gray-600 body-font">
-    <div class="px-0 py-24 mx-auto">
-      <div class="flex flex-wrap -m-4">
-        <div class="p-4 pr-2 md:w-1/2 w-full">
+    <div class="px-0 py-20 mx-auto">
+      <div class="flex flex-wrap">
+        <div class="p-4 pr-2 pl-0 md:w-1/2 w-full">
           <div class="h-full bg-indigo-500 p-8 pt-0 pb-0 pr-0 rounded">
-            <section class="text-gray-600 body-font shadow-lg">
+            <section class="text-gray-600 body-font">
               <div
                 class="container mx-auto flex px-5 py-0 md:flex-row flex-col items-center"
               >
@@ -16,15 +16,15 @@
                   >
                     01 Credit Card
                   </h1>
-                  <p class="mb-0 leading-relaxed text-xl font-bold text-white">
+                  <p class="mb-0 leading-relaxed text-md font-bold text-white">
                     Copper mug try-hard pitchfork pour-over freegan heirloom
                   </p>
                 </div>
                 <div class="mt-2">
                   <lottie
                     :options="defaultOptions"
-                    :height="250"
-                    :width="250"
+                    :height="200"
+                    :width="200"
                     v-on:animCreated="handleAnimation"
                   />
                 </div>
@@ -32,7 +32,7 @@
             </section>
           </div>
         </div>
-        <div class="p-4 pl-2 md:w-1/2 w-full">
+        <div class="p-4 pl-2 pr-0 md:w-1/2 w-full">
           <div class="h-full bg-indigo-600 p-8 pt-0 pb-0 pr-0 rounded shadow-lg">
             <section class="text-gray-600 body-font">
               <div
@@ -46,15 +46,15 @@
                   >
                     02 Credit Card
                   </h1>
-                  <p class="mb-0 leading-relaxed text-xl font-bold text-white">
+                  <p class="mb-0 leading-relaxed text-md font-bold text-white">
                     Copper mug try-hard pitchfork pour-over freegan heirloom
                   </p>
                 </div>
                 <div class="mt-2">
                   <lottie
                     :options="defaultOptions2"
-                    :height="250"
-                    :width="250"
+                    :height="200"
+                    :width="200"
                     v-on:animCreated="handleAnimation"
                   />
                 </div>

@@ -2,7 +2,7 @@
   <section class="navbar">
     <div
       style="z-index: 9999;box-shadow: 0 15px 20px rgb(0,0,0,0.9)"
-      class="w-36 h-36 rounded-full shadow-xl fixed -top-7 -left-6 inline-flex items-center justify-center bg-indigo-800 text-gray-400"
+      class="w-32 h-32 rounded-full shadow-xl fixed -top-7 -left-6 inline-flex items-center justify-center bg-indigo-800 text-gray-400"
     >
       <img
         class="h-8 w-auto sm:h-10"
@@ -13,7 +13,7 @@
     <div class="bg-indigo-900 border-b-1 border-white fixed z-50 w-full">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div
-          class="flex justify-between items-center py-4 md:justify-start md:space-x-10"
+          class="flex justify-between items-center py-2 md:justify-start md:space-x-10"
         >
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">

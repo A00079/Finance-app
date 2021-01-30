@@ -1,6 +1,6 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div style="z-index: 99999"  class="bg-indigo-600 pt-20 ml-12">
+  <div style="z-index: 99999"  class="bg-indigo-600 pt-14 ml-12">
     <div class="mx-auto py-0 px-0 sm:px-6 lg:px-0">
       <div class="flex items-center justify-center flex-wrap">
         <div class="w-0 flex-1 flex items-center">
@@ -25,20 +25,20 @@
             <span class="hidden md:inline">
               <infinite-slide-bar>
                 <div class="flex">
-                  <div class="w-5 h-5 mt-4 mb-0 p-0 mr-8 vert-move">
+                  <div class="w-4 h-4 mt-5 mb-0 p-0 mr-8 vert-move">
                     <img src="/img/rupee.png" id="loading" class="" />
                   </div>
-                  <div class="mr-4 ">
+                  <div class="mr-4 pt-1">
                     <lottie
                       :options="defaultOptions"
-                      :height="35"
-                      :width="35"
+                      :height="33"
+                      :width="33  "
                       v-on:animCreated="handleAnimation"
                     />
                   </div>
-                  <span class="text-white mt-2 text-medium text-sm"
+                  <small class="text-white mt-2"
                     >Big news! We're excited to announce a brand new
-                    product.</span
+                    product.</small
                   >
                 </div>
               </infinite-slide-bar>
