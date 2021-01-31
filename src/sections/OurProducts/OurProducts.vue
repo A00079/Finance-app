@@ -184,7 +184,7 @@
     <img
       style="z-index: -1; height: 540px; width: 600px"
       src="/img/rightbluewave.png"
-      class="absolute top-10 -right-10"
+      class="absolute top-10 right-0"
     />
   </div>
 </template>

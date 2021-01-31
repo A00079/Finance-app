@@ -1,21 +1,12 @@
 <template>
   <footer class="text-gray-600 body-font bg-gray-900">
-    <div class="px-0 py-24">
-      <div class="flex flex-row bg-gray-800 mb-16 w-full">
+    <div class="px-0 py-6">
+      <div class="flex flex-row bg-gray-800 mb-8 w-full">
         <h4
           class="text-xl text-white title-font mr-12 pl-28 mt-5 ml-5 tracking-tight font-semibold"
         >
           Our Patners
         </h4>
-        <div class="p-2">
-          <div class="h-14 flex items-center bg-gray-900 p-2 rounded-lg">
-            <div class="flex-grow">
-              <h2 class="text-gray-100 title-font font-medium">
-                Holden Caulfield
-              </h2>
-            </div>
-          </div>
-        </div>
         <div class="p-2">
           <div class="h-14 flex items-center bg-gray-900 p-2 rounded-lg">
             <div class="flex-grow">
@@ -189,7 +180,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-gray-700 mt-10 p-2">
+      <div class="bg-gray-700 mt-6 p-2">
         <div class="flex justify-around">
           <div class="flex flex-row justify-center items-center">
             <p class="text-gray-400 pl-5">Investors</p>
@@ -233,7 +224,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-4 p-2">
+      <div class="mt-2 p-2">
         <div class="flex justify-around">
           <div class="flex flex-row justify-center">
             <p class="text-sm font-semibold text-gray-300">
@@ -251,42 +242,42 @@
             <p class="text-gray-400 pl-5">
               <img
                 src="/img/mastercard.png"
-                class="bg-white rounded p-2 w-20 h-14"
+                class="bg-white rounded w-16 h-9"
               />
             </p>
             <p class="text-gray-400 pl-5">
               <img
                 src="/img/masterpass.png"
-                class="bg-white rounded p-2 w-20 h-14"
+                class="bg-white rounded w-16 h-9"
               />
             </p>
             <p class="text-gray-400 pl-5">
               <img
                 src="/img/paypal.png"
-                class="bg-white rounded p-2 w-20 h-14"
+                class="bg-white rounded w-16 h-9"
               />
             </p>
             <p class="text-gray-400 pl-5">
               <img
                 src="/img/paysafecard.png"
-                class="bg-white rounded p-2 w-20 h-14"
+                class="bg-white rounded w-16 h-9"
               />
             </p>
             <p class="text-gray-400 pl-5">
-              <img src="/img/visa.png" class="bg-white rounded p-2 w-20 h-14" />
+              <img src="/img/visa.png" class="bg-white rounded w-16 h-9" />
             </p>
           </div>
           <div class="flex flex-row justify-end">
             <p class="text-gray-400 pl-5">
               <img
                 src="/img/mastercard.png"
-                class="bg-white rounded p-2 w-20 h-14"
+                class="bg-white rounded w-16 h-9"
               />
             </p>
             <p class="text-gray-400 pl-5">
               <img
                 src="/img/masterpass.png"
-                class="bg-white rounded p-2 w-20 h-14"
+                class="bg-white rounded w-16 h-9"
               />
             </p>
           </div>
@@ -295,7 +286,7 @@
     </div>
     <div class="bg-gray-900 border-t-2 border-gray-700">
       <div
-        class="container mx-auto py-4 px-24 flex flex-wrap flex-col sm:flex-row"
+        class="container mx-auto py-2 px-24 flex flex-wrap flex-col sm:flex-row"
       >
         <small class="text-gray-400  text-center sm:text-left">
           CIN No. U74900HR2011PTC044581 © Copyright 2010-2020 Paisabazaar.com.<br />
