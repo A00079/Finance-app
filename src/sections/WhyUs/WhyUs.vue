@@ -1,7 +1,7 @@
 <template>
   <section class="text-gray-600 body-font">
     <div
-      class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center"
+      class="container mx-auto  px-5 py-12 grid grid-cols-2 gap-24"
     >
       <div
         class="flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
@@ -96,7 +96,7 @@
       </div>
       <div class="relative">
         <div class="flex justify-around">
-          <div class="absolute top-32 left-48">
+          <div class="absolute top-28 left-20">
             <div
               class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-1 px-2 h-full items-center"
             >
@@ -119,7 +119,7 @@
             </div>
           </div>
           <div></div>
-          <div class="absolute top-32 right-16">
+          <div class="absolute top-28 right-10">
             <div
               class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-1 px-2 h-full items-center"
             >
@@ -143,7 +143,7 @@
           </div>
         </div>
         <div class="flex justify-around">
-          <div class="absolute top-56 left-32">
+          <div class="absolute top-60 mt-2 left-2">
             <div
               class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-1 px-2 h-full items-center"
             >
@@ -166,7 +166,7 @@
             </div>
           </div>
           <div></div>
-          <div class="absolute top-56 -right-2">
+          <div class="absolute top-60 mt-2 -right-6">
             <div
               class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-1 px-2 h-full items-center"
             >
@@ -190,7 +190,7 @@
           </div>
         </div>
         <div class="flex justify-around">
-          <div class="absolute top-80 left-48">
+          <div class="absolute top-96 left-20">
             <div
               class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-1 px-2 h-full items-center"
             >
@@ -212,8 +212,7 @@
               </div>
             </div>
           </div>
-          <div></div>
-          <div class="absolute top-80 right-16">
+          <div class="absolute top-96 right-16">
             <div
               class="bg-white rounded-xl border-2 border-gray-200 shadow-sm flex p-1 px-2 h-full items-center"
             >
@@ -237,10 +236,10 @@
           </div>
         </div>
         <img
-          class="object-cover object-center rounded pl-40 mt-16"
+          class="object-cover object-center rounded pl-32 mt-24"
           alt="hero"
           src="/img/whywecircle.png"
-          style="max-width: 100% !important"
+          style="max-width: 100% !important;height:60%"
         />
       </div>
     </div>

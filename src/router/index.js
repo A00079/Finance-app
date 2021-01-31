@@ -22,6 +22,26 @@ const routes = [
     path: '/credit-card',
     name: 'Credit-Card',
     component: () => import(/* webpackChunkName: "about" */ '../views/Credit-Card.vue')
+  },
+  {
+    path: '/home-loan',
+    name: 'Home-Loan',
+    component: () => import(/* webpackChunkName: "about" */ '../views/HomeLoan.vue')
+  },
+  {
+    path: '/personal-loan',
+    name: 'Personal-Loan',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PersonalLoan.vue')
+  },
+  {
+    path: '/demat-account',
+    name: 'Demat-Account',
+    component: () => import(/* webpackChunkName: "about" */ '../views/DematAccount.vue')
+  },
+  {
+    path: '/saving-account',
+    name: 'Saving-Account',
+    component: () => import(/* webpackChunkName: "about" */ '../views/SavingAccount.vue')
   }
 ]
 

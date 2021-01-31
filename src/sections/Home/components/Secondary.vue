@@ -18,7 +18,7 @@
             <p class="leading-relaxed font-bold">Credit Card</p>
           </div>
         </div>
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer">
+        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('home-loan')">
           <div
             class="border-2 border-gray-200 px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
@@ -34,7 +34,7 @@
             <p class="leading-relaxed font-bold">Home Loan</p>
           </div>
         </div>
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer">
+        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('personal-loan')">
           <div
             class="border-2 border-gray-200 px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
@@ -50,7 +50,7 @@
             <p class="leading-relaxed font-bold">Personal Loan</p>
           </div>
         </div>
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer">
+        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('demat-account')">
           <div
             class="border-2 bg-white border-gray-200 px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
@@ -66,7 +66,7 @@
             <p class="leading-relaxed font-bold">Demat</p>
           </div>
         </div>
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer">
+        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('saving-account')">
           <div
             class="border-2 bg-white border-gray-200 px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
