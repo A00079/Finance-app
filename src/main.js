@@ -7,6 +7,10 @@ import VueTypedJs from "vue-typed-js";
 import InfiniteSlideBar from "vue-infinite-slide-bar";
 import checkView from "vue-check-view";
 import VueScrollReveal from "vue-scroll-reveal";
+import Donut from 'vue-css-donut-chart';
+import 'vue-css-donut-chart/dist/vcdonut.css';
+ 
+Vue.use(Donut);
 
 Vue.use(checkView);
 Vue.component("InfiniteSlideBar", InfiniteSlideBar);
