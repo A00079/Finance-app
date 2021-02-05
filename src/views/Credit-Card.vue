@@ -312,10 +312,12 @@
       </div>
     </section>
     <CreditScore />
+    <CreditOnlineDocuments />
   </div>
 </template>
 <script>
 import CreditScore from "@/components/CreditScore/CreditScore.vue";
+import CreditOnlineDocuments from "@/components/CreditOnlineDocuments/CreditOnlineDocuments.vue";
 import animationData from "@/assets/animations/man.json";
 import animationData2 from "@/assets/animations/female.json";
 import animationData3 from "@/assets/animations/contact-us.json";
@@ -331,6 +333,7 @@ export default {
   },
   components: {
     CreditScore,
+    CreditOnlineDocuments
   },
   mounted() {
     document.getElementById("firstname").focus();
