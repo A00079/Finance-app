@@ -515,7 +515,7 @@
               <div
                 class="multiple-docs ml-10 bg-gray-100 w-full mt-6 rounded-lg"
               >
-                <div class="flex flex-wrap p-2">
+                <div class="flex flex-wrap p-2 space-x-9">
                   <div class="w-24">
                     <div class="bg-white border-2 border-gary-200 rounded-lg">
                       <img src="/img/aadharcard.png" class="w-24 h-14" />
@@ -544,6 +544,18 @@
                       class="text-center text-xs text-indigo-700 font-semibold"
                     >
                       Pan Card
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap p-2 space-x-9">
+                  <div class="w-20">
+                    <div class="bg-transparent rounded-lg">
+                      <img src="/img/voterid.png" class="w-12 h-16 ml-4 mt-2" />
+                    </div>
+                    <p
+                      class="text-center text-xs text-indigo-700 font-semibold"
+                    >
+                      Voter ID
                     </p>
                   </div>
                 </div>

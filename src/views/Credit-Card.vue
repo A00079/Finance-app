@@ -313,9 +313,15 @@
     </section>
     <CreditScore />
     <CreditOnlineDocuments />
+    <TypesOfCreditCard />
+    <BenefitsOfCreditCard />
+    <ListOfCreditCards />
   </div>
 </template>
 <script>
+import ListOfCreditCards from "@/components/ListOfCreditCards/ListOfCreditCards.vue";
+import BenefitsOfCreditCard from "@/components/BenefitsOfCreditCard/BenefitsOfCreditCard.vue";
+import TypesOfCreditCard from "@/components/TypesOfCreditCard/TypesOfCreditCard.vue";
 import CreditScore from "@/components/CreditScore/CreditScore.vue";
 import CreditOnlineDocuments from "@/components/CreditOnlineDocuments/CreditOnlineDocuments.vue";
 import animationData from "@/assets/animations/man.json";
@@ -333,7 +339,10 @@ export default {
   },
   components: {
     CreditScore,
-    CreditOnlineDocuments
+    CreditOnlineDocuments,
+    TypesOfCreditCard,
+    BenefitsOfCreditCard,
+    ListOfCreditCards
   },
   mounted() {
     document.getElementById("firstname").focus();
