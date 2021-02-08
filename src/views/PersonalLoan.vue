@@ -6,11 +6,11 @@
           <div
             class="bg-white border-2 col-span-3 border-gray-200 p-2 shadow-xl rounded-xl"
           >
-            <h4 class="text-2xl ml-3 font-semibold mb-2 text-indigo-900">
-              The Card That Suits You!
+            <h4 class="text-2xl ml-3 font-semibold mb-0 text-indigo-900">
+              Find The Best Suited
             </h4>
             <h5 class="text-lg ml-3 font-medium text-gray-500">
-              Best Credit Card In India
+              Personal Loan For You!
             </h5>
             <div class="space-y-3">
               <div class="flex justify-between px-2 pt-4">
@@ -311,9 +311,13 @@
         />
       </div>
     </section>
+    <CurrentPersonalLoanRate />
+    <WhatIsPersonalLoan />
   </div>
 </template>
 <script>
+import WhatIsPersonalLoan from "@/components/PersonalLoanUIComponents/CurrentLoanRate/WhatIsPersonalLoan.vue";
+import CurrentPersonalLoanRate from "@/components/PersonalLoanUIComponents/CurrentLoanRate/CurrentPersonalLoanRate.vue";
 import animationData from "@/assets/animations/man.json";
 import animationData2 from "@/assets/animations/female.json";
 import animationData3 from "@/assets/animations/money.json";
@@ -326,6 +330,10 @@ export default {
       defaultOptions2: { animationData: animationData2, loop: true },
       defaultOptions3: { animationData: animationData3, loop: true },
     };
+  },
+  components:{
+    CurrentPersonalLoanRate,
+    WhatIsPersonalLoan
   },
   mounted() {
     document.getElementById("firstname").focus();

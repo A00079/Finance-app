@@ -9,7 +9,9 @@ import checkView from "vue-check-view";
 import VueScrollReveal from "vue-scroll-reveal";
 import Donut from 'vue-css-donut-chart';
 import 'vue-css-donut-chart/dist/vcdonut.css';
- 
+import RadialProgressBar from 'vue-radial-progress'
+
+Vue.component("radial-progress-bar", RadialProgressBar);
 Vue.use(Donut);
 
 Vue.use(checkView);

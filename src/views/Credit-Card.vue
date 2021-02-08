@@ -316,9 +316,11 @@
     <TypesOfCreditCard />
     <BenefitsOfCreditCard />
     <ListOfCreditCards />
+    <CreditLimit />
   </div>
 </template>
 <script>
+import CreditLimit from "@/components/CreditLimit/CreditLimit.vue";
 import ListOfCreditCards from "@/components/ListOfCreditCards/ListOfCreditCards.vue";
 import BenefitsOfCreditCard from "@/components/BenefitsOfCreditCard/BenefitsOfCreditCard.vue";
 import TypesOfCreditCard from "@/components/TypesOfCreditCard/TypesOfCreditCard.vue";
@@ -342,7 +344,8 @@ export default {
     CreditOnlineDocuments,
     TypesOfCreditCard,
     BenefitsOfCreditCard,
-    ListOfCreditCards
+    ListOfCreditCards,
+    CreditLimit
   },
   mounted() {
     document.getElementById("firstname").focus();
