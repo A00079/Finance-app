@@ -313,9 +313,19 @@
     </section>
     <CurrentPersonalLoanRate />
     <WhatIsPersonalLoan />
+    <EligibilityCriteria />
+    <BenefitsApplyingPersonaLoan />
+    <ApplyOnlinePersonalLoan />
+    <FactorsAffecting />
+    <BenefitsOfPersonalLoan />
   </div>
 </template>
 <script>
+import BenefitsApplyingPersonaLoan from "@/components/PersonalLoanUIComponents/BenefitsApplyingPersonaLoan/BenefitsApplyingPersonaLoan.vue";
+import FactorsAffecting from "@/components/PersonalLoanUIComponents/FactorsAffecting/FactorsAffecting.vue";
+import EligibilityCriteria from "@/components/PersonalLoanUIComponents/EligibilityCriteria/EligibilityCriteria.vue";
+import BenefitsOfPersonalLoan from "@/components/PersonalLoanUIComponents/BenefitsOfPersonalLoan/BenefitsOfPersonalLoan.vue";
+import ApplyOnlinePersonalLoan from "@/components/PersonalLoanUIComponents/ApplyOnlinePersonalLoan/ApplyOnlinePersonalLoan.vue";
 import WhatIsPersonalLoan from "@/components/PersonalLoanUIComponents/CurrentLoanRate/WhatIsPersonalLoan.vue";
 import CurrentPersonalLoanRate from "@/components/PersonalLoanUIComponents/CurrentLoanRate/CurrentPersonalLoanRate.vue";
 import animationData from "@/assets/animations/man.json";
@@ -333,7 +343,12 @@ export default {
   },
   components:{
     CurrentPersonalLoanRate,
-    WhatIsPersonalLoan
+    WhatIsPersonalLoan,
+    ApplyOnlinePersonalLoan,
+    BenefitsOfPersonalLoan,
+    EligibilityCriteria,
+    FactorsAffecting,
+    BenefitsApplyingPersonaLoan
   },
   mounted() {
     document.getElementById("firstname").focus();

@@ -6,11 +6,11 @@
           <div
             class="bg-white border-2 col-span-3 border-gray-200 p-2 shadow-xl rounded-xl"
           >
-            <h4 class="text-2xl ml-3 font-semibold mb-2 text-indigo-900">
-              The Card That Suits You!
+            <h4 class="text-2xl ml-3 font-semibold mb-0 text-indigo-900">
+              Find The Best Suited
             </h4>
             <h5 class="text-lg ml-3 font-medium text-gray-500">
-              Best Credit Card In India
+              Trading Accounts For You!
             </h5>
             <div class="space-y-3">
               <div class="flex justify-between px-2 pt-4">
@@ -311,9 +311,20 @@
         />
       </div>
     </section>
+    <DematAccountCharges />
+    <WhatIsDematAccount />
+    <ApplyOnlineDematAccount />
+    <StepsInvolvedDematAccount />
+    <BenefitsOfDematAccount />
   </div>
 </template>
 <script>
+import DematAccountCharges from "@/components/DematAccountUIComponents/DematAccountCharges/DematAccountCharges.vue";
+import WhatIsDematAccount from "@/components/DematAccountUIComponents/WhatIsDemateAccount/WhatIsDemateAccount.vue";
+import ApplyOnlineDematAccount from "@/components/DematAccountUIComponents/ApplyOnlineDematAccount/ApplyOnlineDematAccount.vue";
+import StepsInvolvedDematAccount from "@/components/DematAccountUIComponents/StepsInvolvedDematAccount/StepsInvolvedDematAccount.vue";
+import BenefitsOfDematAccount from "@/components/DematAccountUIComponents/BenefitsOfDematAccount/BenefitsOfDematAccount.vue";
+
 import animationData from "@/assets/animations/man.json";
 import animationData2 from "@/assets/animations/female.json";
 import animationData3 from "@/assets/animations/office-boy-and-girl.json";
@@ -326,6 +337,13 @@ export default {
       defaultOptions2: { animationData: animationData2, loop: true },
       defaultOptions3: { animationData: animationData3, loop: true },
     };
+  },
+  components: {
+    DematAccountCharges,
+    WhatIsDematAccount,
+    ApplyOnlineDematAccount,
+    StepsInvolvedDematAccount,
+    BenefitsOfDematAccount
   },
   mounted() {
     document.getElementById("firstname").focus();
