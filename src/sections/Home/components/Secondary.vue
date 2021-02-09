@@ -1,13 +1,16 @@
 <template>
   <section class="text-gray-600 body-font">
-    <div class="container px-5 py-2 mt-8  mx-auto">
+    <div class="container px-5 py-2 mt-8 mx-auto">
       <div class="flex flex-wrap -m-4 text-center">
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('credit-card')">
+        <div
+          class="p-2 md:w-1/5 sm:w-1/2 w-1/2 cursor-pointer"
+          @click="goTo('credit-card')"
+        >
           <div
-            class="border-2 border-gray-200 px-4 py-2 rounded-lg "
+            class="border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
           >
-            <div>
+            <div class="hidden md:block lg:block xl:block">
               <lottie
                 :options="defaultOptions"
                 :height="100"
@@ -15,15 +18,26 @@
                 v-on:animCreated="handleAnimation"
               />
             </div>
+            <div class="md:hidden lg:hidden xl:hidden">
+              <lottie
+                :options="defaultOptions"
+                :height="100"
+                :width="120"
+                v-on:animCreated="handleAnimation"
+              />
+            </div>
             <p class="leading-relaxed font-bold">Credit Card</p>
           </div>
         </div>
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('home-loan')">
+        <div
+          class="p-2 md:w-1/5 sm:w-1/2 w-1/2 cursor-pointer"
+          @click="goTo('home-loan')"
+        >
           <div
-            class="border-2 border-gray-200 px-4 py-2 rounded-lg"
+            class="border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
           >
-            <div>
+            <div class="hidden md:block lg:block xl:block">
               <lottie
                 :options="defaultOptions2"
                 :height="100"
@@ -31,15 +45,26 @@
                 v-on:animCreated="handleAnimation"
               />
             </div>
+            <div class="md:hidden lg:hidden xl:hidden">
+              <lottie
+                :options="defaultOptions2"
+                :height="100"
+                :width="120"
+                v-on:animCreated="handleAnimation"
+              />
+            </div>
             <p class="leading-relaxed font-bold">Home Loan</p>
           </div>
         </div>
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('personal-loan')">
+        <div
+          class="p-2 md:w-1/5 sm:w-1/2 w-1/2 cursor-pointer"
+          @click="goTo('personal-loan')"
+        >
           <div
-            class="border-2 border-gray-200 px-4 py-2 rounded-lg"
+            class="border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
           >
-            <div>
+            <div class="hidden md:block lg:block xl:block">
               <lottie
                 :options="defaultOptions3"
                 :height="100"
@@ -47,15 +72,26 @@
                 v-on:animCreated="handleAnimation"
               />
             </div>
+            <div class="md:hidden lg:hidden xl:hidden">
+              <lottie
+                :options="defaultOptions3"
+                :height="100"
+                :width="120"
+                v-on:animCreated="handleAnimation"
+              />
+            </div>
             <p class="leading-relaxed font-bold">Personal Loan</p>
           </div>
         </div>
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('demat-account')">
+        <div
+          class="p-2 md:w-1/5 sm:w-1/2 w-1/2 cursor-pointer"
+          @click="goTo('demat-account')"
+        >
           <div
-            class="border-2 bg-white border-gray-200 px-4 py-2 rounded-lg"
+            class="border-2 bg-white border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
           >
-            <div>
+            <div class="hidden md:block lg:block xl:block">
               <lottie
                 :options="defaultOptions4"
                 :height="100"
@@ -63,19 +99,41 @@
                 v-on:animCreated="handleAnimation"
               />
             </div>
+            <div class="md:hidden lg:hidden xl:hidden">
+              <lottie
+                :options="defaultOptions4"
+                :height="100"
+                :width="120"
+                v-on:animCreated="handleAnimation"
+              />
+            </div>
             <p class="leading-relaxed font-bold">Demat</p>
           </div>
         </div>
-        <div class="p-2 md:w-1/5 sm:w-1/2 w-full cursor-pointer" @click="goTo('saving-account')">
+        <div
+          class="p-2 md:w-1/5 sm:w-1/2 w-1/2 cursor-pointer"
+          @click="goTo('saving-account')"
+        >
           <div
-            class="border-2 bg-white border-gray-200 px-4 py-2 rounded-lg"
+            class="border-2 bg-white border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg"
             style="box-shadow: 0 15px 20px rgb(76, 215, 184, 0.3)"
           >
-            <div style="z-index: 9999">
+            <div
+              style="z-index: 9999"
+              class="hidden md:block lg:block xl:block"
+            >
               <lottie
                 :options="defaultOptions6"
                 :height="100"
                 :width="220"
+                v-on:animCreated="handleAnimation"
+              />
+            </div>
+            <div style="z-index: 9999" class="md:hidden lg:hidden xl:hidden">
+              <lottie
+                :options="defaultOptions6"
+                :height="100"
+                :width="120"
                 v-on:animCreated="handleAnimation"
               />
             </div>
@@ -105,8 +163,8 @@ export default {
     };
   },
   methods: {
-    goTo(routeLink){
-      this.$router.push({path:routeLink})
+    goTo(routeLink) {
+      this.$router.push({ path: routeLink });
     },
     handleAnimation: function (anim) {
       this.anim = anim;

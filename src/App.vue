@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <div class="hidden md:block lg:block">
+    <!-- <div class="hidden md:block lg:block"> -->
       <div id="nav">
         <Navbar />
         <SubNavBanner />
       </div>
       <router-view />
       <Footer />
-    </div>
-    <div class="md:hidden lg:hidden">
+    <!-- </div> -->
+    <!-- <div class="md:hidden lg:hidden">
       <section class="text-gray-600 body-font">
         <div
           class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
@@ -31,7 +31,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>

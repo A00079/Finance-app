@@ -1,12 +1,13 @@
 <template>
   <section class="text-gray-600 body-font mt-4">
-    <div
-      class="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center "
-    >
+    <div class="hidden md:block lg:block xl:block">
       <div
-        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        class="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center"
       >
-        <!-- <h1
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <!-- <h1
           style="
             background: linear-gradient(to right, #f7971e, #ffd200);
             -webkit-background-clip: text;
@@ -16,12 +17,12 @@
         >
           <p class="skeleton-box">Lead a comfortable life!</p>
         </h1> -->
-        <!-- <h1
+          <!-- <h1
           class="title-font tracking-tight font-extrabold text-2xl mb-4 font-medium text-gray-500"
         >
           We take care of your finances.
         </h1> -->
-        <!-- <div class="mt-8">
+          <!-- <div class="mt-8">
           <button
             class="inline-flex h-12 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg relative"
           >
@@ -60,15 +61,53 @@
             </div>
           </div>
         </div> -->
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div class="">
+            <lottie
+              :options="defaultOptions"
+              :height="270"
+              :width="270"
+              v-on:animCreated="handleAnimation"
+            />
+          </div>
+        </div>
       </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <div class="">
-          <lottie
-            :options="defaultOptions"
-            :height="270"
-            :width="270"
-            v-on:animCreated="handleAnimation"
-          />
+    </div>
+    <div
+      class="md:hidden lg:hidden xl:hidden container mx-auto px-6 mobile-view-home-screen"
+    >
+      <div class="flex flex-col">
+        <div class="animation-content">
+          <div>
+            <lottie
+              :options="defaultOptions"
+              :height="200"
+              :width="200"
+              v-on:animCreated="handleAnimation"
+            />
+          </div>
+        </div>
+        <div class="write-content">
+          <div class="text-center w-full">
+            <h1
+              class="title-font sm:text-4xl text-3xl mb-1 font-bold mt-3 text-indigo-900"
+            >
+              Lead a comfortable life!
+            </h1>
+            <h1
+              class="title-font sm:text-4xl px-12 text-2xl mb-4 font-bold mt-1 text-gray-500"
+            >
+              We take care of your finances.
+            </h1>
+            <div class="flex justify-center">
+              <button
+                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              >
+                Get Your Credit Score
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

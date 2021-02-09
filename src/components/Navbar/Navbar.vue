@@ -1,18 +1,21 @@
 <template>
   <section class="navbar">
     <div
-      style="z-index: 9999;box-shadow: 0 15px 20px rgb(0,0,0,0.9)"
+      style="z-index: 9999; box-shadow: 0 15px 20px rgb(0, 0, 0, 0.9)"
       class="w-32 h-32 rounded-full shadow-xl fixed -top-7 -left-6 inline-flex items-center justify-center bg-indigo-800 text-gray-400"
+      :class="toggleDrawer_MobileMenu ? 'zIndexNegative' : ''"
     >
       <router-link to="/">
-      <img
-        class="h-8 w-auto sm:h-10"
-        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-        alt=""
-      />
+        <img
+          class="h-8 w-auto sm:h-10"
+          src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+          alt=""
+        />
       </router-link>
     </div>
-    <div class="bg-indigo-900 border-b-1 border-white fixed z-50 w-full">
+    <div
+      class="bg-indigo-900 md:pb-0 lg:pb-0 xl:pb-0 pb-4 border-b-1 border-white fixed z-50 w-full"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div
           class="flex justify-between items-center py-2 md:justify-start md:space-x-10"
@@ -27,10 +30,11 @@
               /> -->
             </a>
           </div>
-          <div class="-mr-2 -my-2 md:hidden">
+          <div class="-mr-2 -my-2 pt-1 md:hidden">
             <button
+              @click="toggleMobileMenu()"
               type="button"
-              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              class="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-900"
             >
               <span class="sr-only">Open menu</span>
               <!-- Heroicon name: menu -->
@@ -55,16 +59,21 @@
             <div class="relative">
               <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
               <button
-                @click="toggleDrawer_Solutions = !toggleDrawer_Solutions"
-                class="group rounded-md text-white inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:text-indigo-500"
+                class="group rounded-md text-white inline-flex items-center md:text-sm text-base font-medium hover:text-gray-400 focus:outline-none mr-10 focus:text-indigo-500"
               >
-                <span>Solutions</span>
+                <span>Credit Card</span>
+              </button>
+              <button
+                @click="toggleDrawer('Loan')"
+                class="group rounded-md text-white inline-flex items-center md:text-sm text-base font-medium hover:text-gray-400 focus:outline-none focus:text-indigo-500"
+              >
+                <span>Loans</span>
                 <!--
               Heroicon name: chevron-down
               Item active: "text-gray-600", Item inactive: "text-gray-400"
             -->
                 <svg
-                  v-show="!toggleDrawer_Solutions"
+                  v-show="!toggleDrawer_Loan"
                   class="ml-2 h-5 w-5 text-white group-hover:text-gray-500 transition-all duration-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -78,7 +87,7 @@
                   />
                 </svg>
                 <svg
-                  v-show="toggleDrawer_Solutions"
+                  v-show="toggleDrawer_Loan"
                   class="w-6 h-6 transition-all duration-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -102,7 +111,7 @@
               To: "opacity-0 translate-y-1"
           -->
               <div
-                v-show="toggleDrawer_Solutions"
+                v-show="toggleDrawer_Loan"
                 class="z-50 transition-all duration-500 absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-xl sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
               >
                 <div
@@ -120,7 +129,7 @@
                       />
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Analytics
+                          Home Loan
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           Get a better understanding of where your traffic is
@@ -141,7 +150,7 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Engagement
+                          Personal Loan
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           Speak directly to your customers in a more meaningful
@@ -150,10 +159,10 @@
                       </div>
                     </a>
                   </div>
-                  <div class="relative flex bg-white px-2 py-3">
+                  <div class="relative flex bg-white px-2 py-1">
                     <a
                       href="#"
-                      class="-m-1 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                      class="-m-1 p-3 flex bg-gray-100 mr-2 items-start rounded-lg hover:bg-gray-100"
                     >
                       <!-- Heroicon name: chart-bar -->
                       <img
@@ -163,7 +172,7 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Analytics
+                          Card Loan
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           Get a better understanding of where your traffic is
@@ -174,7 +183,7 @@
 
                     <a
                       href="#"
-                      class="-m-1 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                      class="-m-1 p-3 flex bg-gray-100 items-start rounded-lg hover:bg-gray-100"
                     >
                       <!-- Heroicon name: cursor-click -->
                       <img
@@ -184,7 +193,7 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Engagement
+                          Educational Loan
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           Speak directly to your customers in a more meaningful
@@ -193,10 +202,10 @@
                       </div>
                     </a>
                   </div>
-                  <div class="relative flex bg-white px-2 py-3">
+                  <div class="relative flex bg-white px-2 py-2">
                     <a
                       href="#"
-                      class="-m-1 p-3 w-72 flex items-start rounded-lg hover:bg-gray-50"
+                      class="-m-1 p-3 w-72 bg-gray-100 flex items-start rounded-lg hover:bg-gray-100"
                     >
                       <!-- Heroicon name: chart-bar -->
                       <img
@@ -206,7 +215,7 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Analytics
+                          Used Card Loan
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           Get a better understanding of where your traffic is
@@ -218,7 +227,7 @@
                 </div>
               </div>
             </div>
-            <a
+            <!-- <a
               href="#"
               class="text-base font-medium text-white hover:text-gray-300"
             >
@@ -229,21 +238,21 @@
               class="text-base font-medium text-white hover:text-gray-400"
             >
               Docs
-            </a>
+            </a> -->
 
             <div class="relative">
               <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
               <button
-                @click="toggleDrawer_More = !toggleDrawer_More"
-                class="group rounded-md text-white inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:text-indigo-500"
+                @click="toggleDrawer('Investment')"
+                class="group rounded-md text-white inline-flex md:text-sm items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:text-indigo-500"
               >
-                <span>More</span>
+                <span>Investments</span>
                 <!--
               Heroicon name: chevron-down
               Item active: "text-gray-600", Item inactive: "text-gray-400"
             -->
                 <svg
-                  v-show="!toggleDrawer_More"
+                  v-show="!toggleDrawer_Investment"
                   class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 transition-all duration-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -257,7 +266,7 @@
                   />
                 </svg>
                 <svg
-                  v-show="toggleDrawer_More"
+                  v-show="toggleDrawer_Investment"
                   class="w-6 h-6 transition-all duration-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -281,7 +290,7 @@
               To: "opacity-0 translate-y-1"
           -->
               <div
-                v-show="toggleDrawer_More"
+                v-show="toggleDrawer_Investment"
                 class="z-50 absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0"
               >
                 <div
@@ -301,7 +310,7 @@
                       />
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Help Center
+                          Demat Account
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           Get all of your questions answered in our forums or
@@ -321,7 +330,7 @@
                       />
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Guides
+                          Savings Account
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           Learn how to maximize our platform to get the most out
@@ -332,7 +341,7 @@
 
                     <a
                       href="#"
-                      class="-m-5 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                      class="-m-5 p-3 bg-gray-100 flex items-start rounded-lg hover:bg-gray-100"
                     >
                       <!-- Heroicon name: calendar -->
                       <img
@@ -341,7 +350,7 @@
                       />
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Events
+                          Mutual Funds
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           See what meet-ups and other events we might be
@@ -352,7 +361,7 @@
 
                     <a
                       href="#"
-                      class="-m-5 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                      class="-m-5 p-4 bg-gray-100 mt-1 flex items-start rounded-lg hover:bg-gray-100"
                     >
                       <!-- Heroicon name: shield-check -->
                       <img
@@ -361,7 +370,7 @@
                       />
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          Security
+                          Fixed Deposit
                         </p>
                         <p class="mt-1 text-sm text-gray-500">
                           Understand how we take your privacy seriously.
@@ -372,6 +381,154 @@
                 </div>
               </div>
             </div>
+
+            <div class="relative">
+              <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+              <button
+                @click="toggleDrawer('LearnResources')"
+                class="group rounded-md text-white inline-flex md:text-sm items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:text-indigo-500"
+              >
+                <span>Learn & Resources</span>
+                <!--
+              Heroicon name: chevron-down
+              Item active: "text-gray-600", Item inactive: "text-gray-400"
+            -->
+                <svg
+                  v-show="!toggleDrawer_LearnResources"
+                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 transition-all duration-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  v-show="toggleDrawer_LearnResources"
+                  class="w-6 h-6 transition-all duration-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+
+              <!--
+            'More' flyout menu, show/hide based on flyout menu state.
+            Entering: "transition ease-out duration-200"
+              From: "opacity-0 translate-y-1"
+              To: "opacity-100 translate-y-0"
+            Leaving: "transition ease-in duration-150"
+              From: "opacity-100 translate-y-0"
+              To: "opacity-0 translate-y-1"
+          -->
+              <div
+                v-show="toggleDrawer_LearnResources"
+                class="z-50 absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0"
+              >
+                <div
+                  class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"
+                >
+                  <div
+                    class="relative grid gap-8 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+                  >
+                    <a
+                      href="#"
+                      class="-m-5 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                    >
+                      <!-- Heroicon name: support -->
+                      <img
+                        src="/img/search.png"
+                        class="flex-shrink-0 h-10 w-10 mt-3"
+                      />
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          Demat Account
+                        </p>
+                        <p class="mt-1 text-sm text-gray-500">
+                          Get all of your questions answered in our forums or
+                          contact support.
+                        </p>
+                      </div>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="-m-5 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                    >
+                      <!-- Heroicon name: bookmark-alt -->
+                      <img
+                        src="/img/documentation.png"
+                        class="flex-shrink-0 h-10 w-10 mt-3"
+                      />
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          Savings Account
+                        </p>
+                        <p class="mt-1 text-sm text-gray-500">
+                          Learn how to maximize our platform to get the most out
+                          of it.
+                        </p>
+                      </div>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="-m-5 p-3 bg-gray-100 flex items-start rounded-lg hover:bg-gray-100"
+                    >
+                      <!-- Heroicon name: calendar -->
+                      <img
+                        src="/img/email.png"
+                        class="flex-shrink-0 h-10 w-10 mt-3"
+                      />
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          Mutual Funds
+                        </p>
+                        <p class="mt-1 text-sm text-gray-500">
+                          See what meet-ups and other events we might be
+                          planning near you.
+                        </p>
+                      </div>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="-m-5 p-4 bg-gray-100 mt-1 flex items-start rounded-lg hover:bg-gray-100"
+                    >
+                      <!-- Heroicon name: shield-check -->
+                      <img
+                        src="/img/safe.png"
+                        class="flex-shrink-0 h-10 w-10 mt-3"
+                      />
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          Fixed Deposit
+                        </p>
+                        <p class="mt-1 text-sm text-gray-500">
+                          Understand how we take your privacy seriously.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="text-base md:text-sm mt-1 font-medium text-white hover:text-gray-300"
+            >
+              Contact
+            </a>
           </nav>
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
@@ -381,7 +538,7 @@
               Sign in
             </a>
             <a
-              style="background:#FB117E"
+              style="background: #fb117e"
               href="#"
               class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-indigo-700"
             >
@@ -401,12 +558,13 @@
       To: "opacity-0 scale-95"
   -->
       <div
+        v-show="toggleDrawer_MobileMenu"
         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
       >
         <div
-          class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
+          class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white"
         >
-          <div class="pt-5 pb-6 px-5">
+          <div class="pt-5 pb-6 px-5 border-b-2 border-gray-200 border-dashed">
             <div class="flex items-center justify-between">
               <div>
                 <img
@@ -417,6 +575,7 @@
               </div>
               <div class="-mr-2">
                 <button
+                  @click="toggleMobileMenu()"
                   type="button"
                   class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                 >
@@ -440,133 +599,260 @@
                 </button>
               </div>
             </div>
-            <div class="mt-6">
-              <nav class="grid gap-y-8">
-                <a
-                  href="#"
-                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                >
-                  <!-- Heroicon name: chart-bar -->
-                  <svg
-                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                    />
-                  </svg>
-                  <span class="ml-3 text-base font-medium text-gray-900">
-                    Analytics
-                  </span>
-                </a>
-
-                <a
-                  href="#"
-                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                >
-                  <!-- Heroicon name: cursor-click -->
-                  <svg
-                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-                    />
-                  </svg>
-                  <span class="ml-3 text-base font-medium text-gray-900">
-                    Engagement
-                  </span>
-                </a>
-
-                <a
-                  href="#"
-                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                >
-                  <!-- Heroicon name: shield-check -->
-                  <svg
-                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                  <span class="ml-3 text-base font-medium text-gray-900">
-                    Security
-                  </span>
-                </a>
-
-                <a
-                  href="#"
-                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                >
-                  <!-- Heroicon name: view-grid -->
-                  <svg
-                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                    />
-                  </svg>
-                  <span class="ml-3 text-base font-medium text-gray-900">
-                    Integrations
-                  </span>
-                </a>
-
-                <a
-                  href="#"
-                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                >
-                  <!-- Heroicon name: refresh -->
-                  <svg
-                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                    />
-                  </svg>
-                  <span class="ml-3 text-base font-medium text-gray-900">
-                    Automations
-                  </span>
-                </a>
-              </nav>
+            <div class="mt-2">
+              <h4
+                class="text-md p-2 pl-0 mb-2 text-left font-semibold text-gray-400 uppercase pt-1"
+              >
+                Loans
+              </h4>
+              <div class="flex flex-wrap -m-2">
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Home Loan
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Personal Loan
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Used Car Loan
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Car Loan
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Educational Loan
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2 pb-6 px-5 border-b-2 border-gray-200 border-dashed">
+            <div class="mt-2">
+              <h4
+                class="text-md p-2 pl-0 mb-2 text-left font-semibold text-gray-400 uppercase pt-1"
+              >
+                Investment
+              </h4>
+              <div class="flex flex-wrap -m-2">
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Demat Account
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Saving Account
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Mutual Funds
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Fixed Deposit
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2 pb-6 px-5 border-b-2 border-gray-200 border-dashed">
+            <div class="mt-2">
+              <h4
+                class="text-md p-2 pl-0 mb-2 text-left font-semibold text-gray-400 uppercase pt-1"
+              >
+                Learn & Resources
+              </h4>
+              <div class="flex flex-wrap -m-2">
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Demat Account
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Saving Account
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Mutual Funds
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Fixed Deposit
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-40">
+                  <div class="p-0">
+                    <div class="h-full flex items-center p-2 rounded-lg">
+                      <img
+                        alt="team"
+                        class="w-6 h-6 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                        src="https://dummyimage.com/80x80"
+                      />
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 title-font text-sm font-bold">
+                          Demat Account
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="py-6 px-5 space-y-6">
@@ -575,56 +861,21 @@
                 href="#"
                 class="text-base font-medium text-gray-900 hover:text-gray-700"
               >
-                Pricing
-              </a>
-
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Docs
-              </a>
-
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Enterprise
-              </a>
-
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Blog
-              </a>
-
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Help Center
-              </a>
-
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Guides
-              </a>
-
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Security
-              </a>
-
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Events
+                <div class="flex flex-row">
+                  <svg
+                    class="w-6 h-6 mr-1 text-indigo-800"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <p class="text-gray-900 title-font text-sm font-bold">Help Center</p>
+                </div>
               </a>
             </div>
             <div>
@@ -652,11 +903,38 @@ export default {
   name: "Navbar",
   data() {
     return {
-      toggleDrawer_Solutions: false,
-      toggleDrawer_More: false,
+      toggleDrawer_Loan: false,
+      toggleDrawer_Investment: false,
+      toggleDrawer_LearnResources: false,
+      toggleDrawer_MobileMenu: false,
     };
+  },
+  methods: {
+    toggleMobileMenu() {
+      this.toggleDrawer_MobileMenu = !this.toggleDrawer_MobileMenu;
+    },
+    toggleDrawer(listName) {
+      if (listName === "Loan") {
+        this.toggleDrawer_Investment = false;
+        this.toggleDrawer_LearnResources = false;
+        this.toggleDrawer_Loan = !this.toggleDrawer_Loan;
+      }
+      if (listName === "Investment") {
+        this.toggleDrawer_Loan = false;
+        this.toggleDrawer_LearnResources = false;
+        this.toggleDrawer_Investment = !this.toggleDrawer_Investment;
+      }
+      if (listName === "LearnResources") {
+        this.toggleDrawer_Loan = false;
+        this.toggleDrawer_Investment = false;
+        this.toggleDrawer_LearnResources = !this.toggleDrawer_LearnResources;
+      }
+    },
   },
 };
 </script>
 <style scoped>
+.zIndexNegative {
+  z-index: -1 !important;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="text-gray-600 body-font">
-    <div class="px-0 py-20 mx-auto">
+    <div class="hidden md:block lg:block xl:block px-0 py-20 mx-auto">
       <div class="flex flex-wrap">
         <div class="p-4 pr-2 pl-0 md:w-1/2 w-full">
           <div class="h-full bg-indigo-500 p-8 pt-0 pb-0 pr-0 rounded">
@@ -33,7 +33,9 @@
           </div>
         </div>
         <div class="p-4 pl-2 pr-0 md:w-1/2 w-full">
-          <div class="h-full bg-indigo-600 p-8 pt-0 pb-0 pr-0 rounded shadow-lg">
+          <div
+            class="h-full bg-indigo-600 p-8 pt-0 pb-0 pr-0 rounded shadow-lg"
+          >
             <section class="text-gray-600 body-font">
               <div
                 class="container mx-auto flex px-5 py-0 md:flex-row flex-col items-center"
@@ -60,6 +62,44 @@
                 </div>
               </div>
             </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:hidden lg:hidden xl:hidden mobile-screen-infobars py-20">
+      <div class="flex flex-col">
+        <div class="p-0 pr-6 w-full">
+          <div
+            class="h-full bg-indigo-500 flex items-center border-gray-200 border p-4 rounded-r-md"
+          >
+            <div class="flex-grow">
+              <h2 class="text-white title-font font-medium">
+                Holden Caulfield
+              </h2>
+              <p class="text-white">UI Designer</p>
+            </div>
+            <img
+              alt="team"
+              class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full ml-4"
+              src="https://dummyimage.com/80x80"
+            />
+          </div>
+        </div>
+        <div class="p-0 pl-6 w-full mt-5">
+          <div
+            class="h-full bg-indigo-600 flex items-center border-gray-200 border p-4 rounded-l-md"
+          >
+            <img
+              alt="team"
+              class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/80x80"
+            />
+            <div class="flex-grow">
+              <h2 class="text-white title-font font-medium">
+                Holden Caulfield
+              </h2>
+              <p class="text-white">UI Designer</p>
+            </div>
           </div>
         </div>
       </div>

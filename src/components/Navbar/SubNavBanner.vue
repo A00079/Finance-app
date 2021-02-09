@@ -22,10 +22,10 @@
             </svg>
           </span> -->
           <p class="ml-0 font-medium text-white truncate w-full">
-            <span class="hidden md:inline">
+            <span class="md:inline">
               <infinite-slide-bar>
                 <div class="flex">
-                  <div class="w-4 h-4 mt-5 mb-0 p-0 mr-8 vert-move">
+                  <div class="w-4 h-4 mt-5 mb-0 p-0 mr-8 md:ml-0 lg:ml-0 xl:ml-0 ml-64 vert-move">
                     <img src="/img/rupee.png" id="loading" class="" />
                   </div>
                   <div class="mr-4 pt-1">
