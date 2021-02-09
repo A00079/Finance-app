@@ -6,11 +6,11 @@
           <div
             class="bg-white border-2 col-span-3 border-gray-200 p-2 shadow-xl rounded-xl"
           >
-            <h4 class="text-2xl ml-3 font-semibold mb-2 text-indigo-900">
-              The Card That Suits You!
+            <h4 class="text-2xl ml-3 font-semibold mb-0 text-indigo-900">
+              Find The Best Suited!
             </h4>
             <h5 class="text-lg ml-3 font-medium text-gray-500">
-              Best Credit Card In India
+              Saving Account For You!
             </h5>
             <div class="space-y-3">
               <div class="flex justify-between px-2 pt-4">
@@ -311,9 +311,19 @@
         />
       </div>
     </section>
+    <SavingAccountCharges />
+    <WhatIsSavingAccount />
+    <SavingKeyFeatures />
+    <TypesOfBankAccount />
+    <TypesOfSavingAccount />
   </div>
 </template>
 <script>
+import SavingAccountCharges from "@/components/SavingAccountUIComponents/SavingAccountCharges/SavingAccountCharges.vue";
+import WhatIsSavingAccount from "@/components/SavingAccountUIComponents/WhatIsSavingAccount/WhatIsSavingAccount.vue";
+import SavingKeyFeatures from "@/components/SavingAccountUIComponents/SavingKeyFeatures/SavingKeyFeatures.vue";
+import TypesOfBankAccount from "@/components/SavingAccountUIComponents/TypesOfBankAccount/TypesOfBankAccount.vue";
+import TypesOfSavingAccount from "@/components/SavingAccountUIComponents/TypesOfSavingAccount/TypesOfSavingAccount.vue";
 import animationData from "@/assets/animations/man.json";
 import animationData2 from "@/assets/animations/female.json";
 import animationData3 from "@/assets/animations/latest-mobile-plus-website-savings.json";
@@ -326,6 +336,13 @@ export default {
       defaultOptions2: { animationData: animationData2, loop: true },
       defaultOptions3: { animationData: animationData3, loop: true },
     };
+  },
+  components:{
+    SavingAccountCharges,
+    WhatIsSavingAccount,
+    SavingKeyFeatures,
+    TypesOfBankAccount,
+    TypesOfSavingAccount
   },
   mounted() {
     document.getElementById("firstname").focus();
