@@ -7,10 +7,10 @@
             class="bg-white border-2 col-span-3 border-gray-200 p-2 shadow-xl rounded-xl"
           >
             <h4 class="text-2xl ml-3 font-semibold mb-2 text-indigo-900">
-              The Card That Suits You!
+              Find The Best Suited
             </h4>
             <h5 class="text-lg ml-3 font-medium text-gray-500">
-              Best Credit Card In India
+              Home Loan For You!
             </h5>
             <div class="space-y-3">
               <div class="flex justify-between px-2 pt-4">
@@ -311,9 +311,23 @@
         />
       </div>
     </section>
+    <CurrentHomeLoanRate />
+    <WhatIsHomeLoan />
+    <EligibilityCriteria />
+    <BenefitsApplyingHomeLoan />
+    <ApplyOnlineHomeLoan />
+    <FactorsAffecting />
+    <BenefitsOfHomeLoan />
   </div>
 </template>
 <script>
+import CurrentHomeLoanRate from "@/components/HomeLoanUIComponents/CurrentLoanRate/CurrentHomeLoanRate.vue";
+import WhatIsHomeLoan from "@/components/HomeLoanUIComponents/WhatIsHomeLoan/WhatIsHomeLoan.vue";
+import EligibilityCriteria from "@/components/HomeLoanUIComponents/EligibilityCriteria/EligibilityCriteria.vue";
+import BenefitsApplyingHomeLoan from "@/components/HomeLoanUIComponents/BenefitsApplyingHomeLoan/BenefitsApplyingHomeLoan.vue";
+import ApplyOnlineHomeLoan from "@/components/HomeLoanUIComponents/ApplyOnlineHomeLoan/ApplyOnlineHomeLoan.vue";
+import FactorsAffecting from "@/components/HomeLoanUIComponents/FactorsAffecting/FactorsAffecting.vue";
+import BenefitsOfHomeLoan from "@/components/HomeLoanUIComponents/BenefitsOfHomeLoan/BenefitsOfHomeLoan.vue";
 import animationData from "@/assets/animations/man.json";
 import animationData2 from "@/assets/animations/female.json";
 import animationData3 from "@/assets/animations/home2.json";
@@ -326,6 +340,15 @@ export default {
       defaultOptions2: { animationData: animationData2, loop: true },
       defaultOptions3: { animationData: animationData3, loop: true },
     };
+  },
+  components: {
+    CurrentHomeLoanRate,
+    WhatIsHomeLoan,
+    EligibilityCriteria,
+    BenefitsApplyingHomeLoan,
+    ApplyOnlineHomeLoan,
+    FactorsAffecting,
+    BenefitsOfHomeLoan
   },
   mounted() {
     document.getElementById("firstname").focus();
