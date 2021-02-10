@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-600 body-font mt-4">
+  <section class="text-gray-600 body-font mt-0">
     <div class="hidden md:block lg:block xl:block">
       <div
         class="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center"
@@ -78,12 +78,12 @@
       class="md:hidden lg:hidden xl:hidden container mx-auto px-6 mobile-view-home-screen"
     >
       <div class="flex flex-col">
-        <div class="animation-content">
+        <div class="animation-content bg-indigo-100 py-3 rounded-b-3xl">
           <div>
             <lottie
               :options="defaultOptions"
-              :height="200"
-              :width="200"
+              :height="160"
+              :width="160"
               v-on:animCreated="handleAnimation"
             />
           </div>
@@ -91,18 +91,18 @@
         <div class="write-content">
           <div class="text-center w-full">
             <h1
-              class="title-font sm:text-4xl text-3xl mb-1 font-bold mt-3 text-indigo-900"
+              class="title-font sm:text-4xl text-2xl mb-0 font-bold mt-1 text-indigo-700"
             >
               Lead a comfortable life!
             </h1>
             <h1
-              class="title-font sm:text-4xl px-12 text-2xl mb-4 font-bold mt-1 text-gray-500"
+              class="title-font sm:text-4xl px-4 text-md mb-4 font-demibold mt-0 text-gray-500"
             >
               We take care of your finances.
             </h1>
             <div class="flex justify-center">
               <button
-                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-600 rounded text-sm"
               >
                 Get Your Credit Score
               </button>
