@@ -66,40 +66,41 @@
         </div>
       </div>
     </div>
-    <div class="md:hidden lg:hidden xl:hidden mobile-screen-infobars py-20">
+    <div class="md:hidden lg:hidden xl:hidden mobile-screen-infobars py-10 mt-28">
       <div class="flex flex-col">
-        <div class="p-0 pr-6 w-full">
-          <div
-            class="h-full bg-indigo-500 flex items-center border-gray-200 border p-4 rounded-r-md"
-          >
-            <div class="flex-grow">
-              <h2 class="text-white title-font font-medium">
-                Holden Caulfield
-              </h2>
-              <p class="text-white">UI Designer</p>
+        <div class="flex flex-row">
+          <div class="p-0 pr-6 w-full">
+            <div
+              class="font-bold -ml-28 text-gray-700 rounded-full bg-indigo-600 flex items-center justify-center font-mono"
+              style="height: 250px; width: 250px"
+            >
+              <img
+                alt="Customer Service"
+                class="w-72 h-72 ml-56 mb-10"
+                src="/img/customerservice.png"
+              />
             </div>
-            <img
-              alt="team"
-              class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full ml-4"
-              src="https://dummyimage.com/80x80"
-            />
           </div>
-        </div>
-        <div class="p-0 pl-6 w-full mt-5">
-          <div
-            class="h-full bg-indigo-600 flex items-center border-gray-200 border p-4 rounded-l-md"
+          <h5
+            class="text-sm font-extrabold text-gray-500 text-center mr-2 mt-20"
           >
+            24 x 7 Customer Support
+          </h5>
+        </div>
+        <div class="flex flex-row">
+          <h5
+            class="text-sm font-extrabold text-gray-500 text-center ml-2 mt-20"
+          >
+            Take Charge Of Your Finance
+          </h5>
+
+          <div class="p-0 pl-6 mt-3 w-full relative">
+            <div class="semicircle"></div>
             <img
-              alt="team"
-              class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-              src="https://dummyimage.com/80x80"
+              alt="analyticsprocess"
+              class="w-64 h-64 mb-10 absolute top-0 right-4"
+              src="/img/analyticsprocess.png"
             />
-            <div class="flex-grow">
-              <h2 class="text-white title-font font-medium">
-                Holden Caulfield
-              </h2>
-              <p class="text-white">UI Designer</p>
-            </div>
           </div>
         </div>
       </div>
@@ -137,4 +138,14 @@ export default {
 };
 </script>
 <style scoped>
+.semicircle {
+  background: #4f46e5;
+  display: inline-block;
+  margin: 0 0em 0em 0;
+  height: 250px;
+  width: 130px;
+  float: right;
+  border-bottom-left-radius: 120rem;
+  border-top-left-radius: 120rem;
+}
 </style>

@@ -4,20 +4,25 @@
       class="text-gray-600 body-font relative h-screen"
       v-view.once="onceHandler"
     >
-      <div class="container px-24 py-16 mx-auto" :key="rerender">
-        <div class="flex flex-col text-center w-full mb-20">
+      <div
+        class="container px-4 md:px-24 lg:px-24 xl:px-24 py-16 mx-auto"
+        :key="rerender"
+      >
+        <div class="flex flex-col text-center w-full mb-10 md:mb-20 lg:mb-20 xl:mb-20">
           <h1
-            class="sm:text-3xl md:text-4xl font-medium title-font mb-4 text-indigo-900"
+            class="text-2xl md:text-4xl font-medium title-font mb-4 text-indigo-900"
           >
             Get your latest Credit Score, FREE
           </h1>
-          <p class="lg:w-2/3 font-bold mx-auto leading-relaxed text-base">
+          <p
+            class="lg:w-2/3 px-12 md:px-0 lg:px-04 xl:px-0 font-bold mx-auto leading-relaxed text-base"
+          >
             One powerful number that puts you in control
           </p>
         </div>
         <div class="flex flex-wrap -m-4 text-center cursor-pointer">
           <div
-            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 bg-white border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 w-1/2 border-2 bg-white border-gray-200 shadow-xl rounded-lg"
             v-show="firstIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
@@ -33,7 +38,7 @@
             </div>
           </div>
           <div
-            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 w-1/2 border-2 bg-white border-gray-200 shadow-xl rounded-lg"
             v-show="secondIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
@@ -49,7 +54,7 @@
             </div>
           </div>
           <div
-            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            class="hidden md:block lg:block xl:block p-2 md:w-1/5 w-1/2 border-2 bg-white border-gray-200 shadow-xl rounded-lg"
             v-show="thirdIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
@@ -65,7 +70,7 @@
             </div>
           </div>
           <div
-            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 w-1/2 border-2 bg-white border-gray-200 shadow-xl rounded-lg"
             v-show="fourIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
@@ -75,11 +80,13 @@
                 :width="150"
                 v-on:animCreated="handleAnimation"
               />
-              <p class="leading-relaxed text-md font-medium">Get The Best Offers For You.</p>
+              <p class="leading-relaxed text-md font-medium">
+                Get The Best Offers For You.
+              </p>
             </div>
           </div>
           <div
-            class="p-2 md:w-1/5 sm:w-1/2 w-full border-2 border-gray-200 shadow-xl rounded-lg"
+            class="p-2 md:w-1/5 w-1/2 border-2 bg-white border-gray-200 shadow-xl rounded-lg"
             v-show="fiveIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
@@ -100,20 +107,22 @@
             </div>
           </div>
         </div>
-        <div
-          class="absolute top-52 left-0 w-full transition duration-500 ease-in-out"
-          :key="rerender + 1"
-          v-show="showanimation"
-        >
-          <infinite-slide-bar direction="reverse">
-            <lottie
-              style="margin: 0px !important; margin-left: -194px !important"
-              :options="defaultOptions"
-              :height="270"
-              :width="270"
-              v-on:animCreated="handleAnimation"
-            />
-          </infinite-slide-bar>
+        <div class="hidden md:block lg:block xl:block">
+          <div
+            class="absolute top-52 left-0 w-full transition duration-500 ease-in-out"
+            :key="rerender + 1"
+            v-show="showanimation"
+          >
+            <infinite-slide-bar direction="reverse">
+              <lottie
+                style="margin: 0px !important; margin-left: -194px !important"
+                :options="defaultOptions"
+                :height="270"
+                :width="270"
+                v-on:animCreated="handleAnimation"
+              />
+            </infinite-slide-bar>
+          </div>
         </div>
       </div>
       <img
@@ -175,19 +184,19 @@ export default {
         // this.firstIconFlag = true;
       }, 12000);
     },
-    handleAnimation: function(anim) {
+    handleAnimation: function (anim) {
       this.anim = anim;
     },
-    stop: function() {
+    stop: function () {
       this.anim.stop();
     },
-    play: function() {
+    play: function () {
       this.anim.play();
     },
-    pause: function() {
+    pause: function () {
       this.anim.pause();
     },
-    onSpeedChange: function() {
+    onSpeedChange: function () {
       this.anim.setSpeed(this.animationSpeed);
     },
   },

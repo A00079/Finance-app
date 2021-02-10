@@ -6,7 +6,7 @@
     <img
       style="z-index: -1"
       src="/img/wave.png"
-      class="absolute -top-5 right-0"
+      class="absolute -top-5 right-0 hidden md:block lg:block xl:block"
     />
   </div>
 </template>

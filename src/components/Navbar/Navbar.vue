@@ -2,19 +2,19 @@
   <section class="navbar">
     <div
       style="z-index: 9999; box-shadow: 0 15px 20px rgb(0, 0, 0, 0.9)"
-      class="w-32 h-32 rounded-full shadow-xl fixed -top-7 -left-6 inline-flex items-center justify-center bg-indigo-800 text-gray-400"
+      class="w-32 h-32 md:-top-7 -left-6 lg:-top-7 -left-6 xl:-top-7 -left-6 rounded-full shadow-xl fixed -top-10 -left-10 inline-flex items-center justify-center bg-indigo-800 text-gray-400"
       :class="toggleDrawer_MobileMenu ? 'zIndexNegative' : ''"
     >
       <router-link to="/">
         <img
-          class="h-8 w-auto sm:h-10"
+          class="h-8 w-auto sm:h-10 pl-7 mt-5 md:pl-0 mt-0 lg:pl-0 mt-0 xl:pl-0 mt-0"
           src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
           alt=""
         />
       </router-link>
     </div>
     <div
-      class="bg-indigo-900 md:pb-0 lg:pb-0 xl:pb-0 pb-4 border-b-1 border-white fixed z-50 w-full"
+      class="bg-indigo-900 md:pb-0 lg:pb-0 xl:pb-0 pb-1 border-b-1 border-white fixed z-50 w-full"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div
@@ -562,6 +562,7 @@
         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
       >
         <div
+          style="overflow: scroll; height: 40rem"
           class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white"
         >
           <div class="pt-5 pb-6 px-5 border-b-2 border-gray-200 border-dashed">
@@ -874,7 +875,9 @@
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  <p class="text-gray-900 title-font text-sm font-bold">Help Center</p>
+                  <p class="text-gray-900 title-font text-sm font-bold">
+                    Help Center
+                  </p>
                 </div>
               </a>
             </div>

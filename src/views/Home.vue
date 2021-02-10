@@ -1,9 +1,9 @@
 <template>
   <div>
     <home />
+    <credit-score />
+    <our-products />
     <div class="hidden md:block lg:block xl:block">
-      <credit-score />
-      <our-products />
       <why-us />
       <about-us />
     </div>
