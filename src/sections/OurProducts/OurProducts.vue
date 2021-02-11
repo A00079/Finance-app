@@ -12,7 +12,7 @@
               <h1
                 class="title-font sm:text-4xl text-4xl mb-4 font-medium text-indigo-900"
               >
-                ur Products
+                Our Products
               </h1>
               <p class="mb-8 leading-relaxed text-md text-gray-600 font-medium">
                 Copper mug try-hard pitchfork pour-over freegan heirloom neutra
@@ -230,7 +230,7 @@
         />
       </div>
     </div>
-    <div class="md:hidden lg:hidden xl:hidden mt-20">
+    <div class="md:hidden lg:hidden xl:hidden mt-3">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-3">
           <h2
@@ -243,16 +243,55 @@
           </h1>
         </div>
         <div class="product-content">
-          <div class="w-full mb-10 px-4">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center h-full w-full"
-                src="/img/ourproduct.png"
-              />
+          <div class="w-full mb-10 px-0">
+            <div class="flex flex-col">
+              <div class="p-0 w-52 -mx-5 mb-1">
+                <div
+                  class="h-full bg-pink-500 flex items-center border-gray-200 border p-3 rounded-md"
+                >
+                  <div class="flex-grow">
+                    <h2 class="text-white title-font font-medium">
+                      Holden Caulfield
+                    </h2>
+                    <p class="text-white">UI Designer</p>
+                  </div>
+                  <img
+                    alt="team"
+                    class="w-12 h-12 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full ml-0"
+                    src="https://dummyimage.com/80x80"
+                  />
+                </div>
+              </div>
+              <div
+                class="rounded-3xl w-52 mx-auto bg-white shadow-xl border-2 border-gray-200 overflow-hidden"
+              >
+                <img
+                  alt="content"
+                  class="h-48 w-48 mx-auto"
+                  src="/img/ourproduct.png"
+                />
+              </div>
+              <div class="p-0 w-full mt-1">
+                <div
+                  style="float: right"
+                  class="h-full -mr-5 bg-pink-500 flex items-center border-gray-200 border p-3 rounded-md"
+                >
+                  <img
+                    alt="team"
+                    class="w-12 h-12 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-2"
+                    src="https://dummyimage.com/80x80"
+                  />
+                  <div class="flex-grow">
+                    <h2 class="text-white title-font font-medium">
+                      Holden Caulfield
+                    </h2>
+                    <p class="text-white">UI Designer</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <h2
-              class="title-font text-center text-2xl font-medium text-gray-900 mt-3 mb-3"
+              class="title-font text-center text-2xl font-medium text-indigo-700 mt-8 mb-3"
             >
               Advance Feature Products
             </h2>
@@ -260,8 +299,103 @@
               Williamsburg occupy sustainable snackwave gochujang. Pinterest
               cornhole brunch, slow-carb neutra irony.
             </p>
+            <div class="flex w-full px-24 mx-auto rounded mt-6">
+              <button
+                @click="toggleProduct('short')"
+                class="py-1 px-6 rounded border-2 border-indigo-500 mx-auto  focus:outline-none"
+                :class="shortProduct?'bg-indigo-500 text-white': 'text-gray-700'"
+              >
+                Short
+              </button>
+              <button
+                @click="toggleProduct('summary')"
+                class="py-1 border-2 rounded border-indigo-500  mx-auto px-4 focus:outline-none"
+                :class="summaryProduct?'bg-indigo-500 text-white': 'text-gray-700'"
+              >
+                Summary
+              </button>
+            </div>
           </div>
-          <div>
+          <div class="summary-product" v-show="summaryProduct">
+            <div class="flex flex-row justify-between">
+              <div
+                class="left-panel bg-white -mx-5 rounded-md border-2 border-gray-200 shadow-xl"
+              >
+                <div class="flex flex-col">
+                  <div
+                    class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
+                  >
+                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <small class="text-gray-900 font-bold text-xs text-center"
+                      >Credit Card</small
+                    >
+                  </div>
+                  <div
+                    class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
+                  >
+                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <small class="text-gray-900 font-bold text-xs text-center"
+                      >Credit Card</small
+                    >
+                  </div>
+                  <div
+                    class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
+                  >
+                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <small class="text-gray-900 font-bold text-xs text-center"
+                      >Credit Card</small
+                    >
+                  </div>
+                  <div class="flex flex-col p-2">
+                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <small class="text-gray-900 font-bold text-xs text-center"
+                      >Credit Card</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="middle-panel">
+                <img src="/img/credit-card.svg" class="w-24 h-24" />
+              </div>
+              <div
+                class="right-panel bg-white -mr-5 rounded-md border-2 border-gray-200 shadow-xl"
+              >
+                <div class="flex flex-col">
+                  <div
+                    class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
+                  >
+                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <small class="text-gray-900 font-bold text-xs text-center"
+                      >Credit Card</small
+                    >
+                  </div>
+                  <div
+                    class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
+                  >
+                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <small class="text-gray-900 font-bold text-xs text-center"
+                      >Credit Card</small
+                    >
+                  </div>
+                  <div
+                    class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
+                  >
+                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <small class="text-gray-900 font-bold text-xs text-center"
+                      >Credit Card</small
+                    >
+                  </div>
+                  <div class="flex flex-col p-2">
+                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <small class="text-gray-900 font-bold text-xs text-center"
+                      >Credit Card</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-show="shortProduct">
             <div class="grid grid-cols-3 place-items-center gap-10">
               <div
                 @mouseover="
@@ -422,6 +556,8 @@ export default {
     return {
       cardTitle: "Health Care",
       cardImg: "healthcare.svg",
+      shortProduct: false,
+      summaryProduct: true,
     };
   },
   methods: {
@@ -429,6 +565,16 @@ export default {
       this.cardTitle = title;
       this.cardImg = img;
     },
+    toggleProduct(section){
+      if(section == 'short'){
+        this.shortProduct = true;
+        this.summaryProduct = false;
+      }
+      if(section == 'summary'){
+        this.shortProduct = false;
+        this.summaryProduct = true;
+      }
+    }
   },
 };
 </script>

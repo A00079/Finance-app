@@ -1,14 +1,16 @@
 <template>
   <div>
     <section
-      class="text-gray-600 body-font relative h-screen"
+      class="text-gray-600 body-font static h-screen md:relative lg:relative xl:relative"
       v-view.once="onceHandler"
     >
       <div
         class="container px-4 md:px-24 lg:px-24 xl:px-24 py-16 mx-auto"
         :key="rerender"
       >
-        <div class="flex flex-col text-center w-full mb-10 md:mb-20 lg:mb-20 xl:mb-20">
+        <div
+          class="flex flex-col text-center w-full mb-10 md:mb-20 lg:mb-20 xl:mb-20"
+        >
           <h1
             class="text-2xl md:text-4xl font-medium title-font mb-4 text-indigo-900"
           >
@@ -20,18 +22,28 @@
             One powerful number that puts you in control
           </p>
         </div>
-        <div class="flex flex-wrap -m-4 text-center cursor-pointer">
+        <div class="flex flex-wrap -m-4 text-center cursor-pointer px-3">
           <div
             class="p-2 md:w-1/5 w-1/2 border-2 bg-white border-gray-200 shadow-xl rounded-lg"
             v-show="firstIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
-              <lottie
-                :options="defaultOptions2"
-                :height="150"
-                :width="150"
-                v-on:animCreated="handleAnimation"
-              />
+              <div class="hidden md:block lg:block xl:block">
+                <lottie
+                  :options="defaultOptions2"
+                  :height="150"
+                  :width="150"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
+              <div class="md:hidden lg:hidden xl:hidden">
+                <lottie
+                  :options="defaultOptions2"
+                  :height="120"
+                  :width="120"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
               <p class="leading-relaxed text-md font-medium">
                 Check Your Credit Score At Your Home Confort.
               </p>
@@ -42,12 +54,22 @@
             v-show="secondIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
-              <lottie
-                :options="defaultOptions3"
-                :height="150"
-                :width="150"
-                v-on:animCreated="handleAnimation"
-              />
+              <div class="hidden md:block lg:block xl:block">
+                <lottie
+                  :options="defaultOptions3"
+                  :height="150"
+                  :width="150"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
+              <div class="md:hidden lg:hidden xl:hidden">
+                <lottie
+                  :options="defaultOptions3"
+                  :height="120"
+                  :width="120"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
               <p class="leading-relaxed text-md font-medium">
                 Increase chances of application approval.
               </p>
@@ -58,12 +80,22 @@
             v-show="thirdIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
-              <lottie
-                :options="defaultOptions4"
-                :height="150"
-                :width="150"
-                v-on:animCreated="handleAnimation"
-              />
+              <div class="hidden md:block lg:block xl:block">
+                <lottie
+                  :options="defaultOptions4"
+                  :height="150"
+                  :width="150"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
+              <div class="md:hidden lg:hidden xl:hidden">
+                <lottie
+                  :options="defaultOptions4"
+                  :height="120"
+                  :width="120"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
               <p class="leading-relaxed text-md font-medium">
                 Take charge of your finances.
               </p>
@@ -74,12 +106,22 @@
             v-show="fourIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
-              <lottie
-                :options="defaultOptions5"
-                :height="150"
-                :width="150"
-                v-on:animCreated="handleAnimation"
-              />
+              <div class="hidden md:block lg:block xl:block">
+                <lottie
+                  :options="defaultOptions5"
+                  :height="150"
+                  :width="150"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
+              <div class="md:hidden lg:hidden xl:hidden">
+                <lottie
+                  :options="defaultOptions5"
+                  :height="120"
+                  :width="120"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
               <p class="leading-relaxed text-md font-medium">
                 Get The Best Offers For You.
               </p>
@@ -90,12 +132,22 @@
             v-show="fiveIconFlag"
           >
             <div class="px-2 py-6 rounded-lg">
-              <lottie
-                :options="defaultOptions6"
-                :height="150"
-                :width="150"
-                v-on:animCreated="handleAnimation"
-              />
+              <div class="hidden md:block lg:block xl:block">
+                <lottie
+                  :options="defaultOptions6"
+                  :height="150"
+                  :width="150"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
+              <div class="md:hidden lg:hidden xl:hidden">
+                <lottie
+                  :options="defaultOptions6"
+                  :height="120"
+                  :width="120"
+                  v-on:animCreated="handleAnimation"
+                />
+              </div>
               <p class="leading-relaxed text-md font-medium">
                 Get Your Score Now.
               </p>

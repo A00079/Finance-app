@@ -11,7 +11,7 @@
           @click="goTo('credit-card')"
         >
           <div
-            class="bg-yellow-100 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg  md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
+            class="bg-indigo-50 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg  md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
           >
             <div class="hidden md:block lg:block xl:block">
               <lottie
@@ -41,7 +41,7 @@
           @click="goTo('home-loan')"
         >
           <div
-            class="bg-yellow-100 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
+            class="bg-indigo-50 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
           >
             <div class="hidden md:block lg:block xl:block">
               <lottie
@@ -72,7 +72,7 @@
           @click="goTo('personal-loan')"
         >
           <div
-            class="bg-yellow-100 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
+            class="bg-indigo-50 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
           >
             <div class="hidden md:block lg:block xl:block">
               <lottie
@@ -102,7 +102,7 @@
           @click="goTo('demat-account')"
         >
           <div
-            class="bg-yellow-100 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
+            class="bg-indigo-50 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
           >
             <div class="hidden md:block lg:block xl:block">
               <lottie
@@ -132,7 +132,7 @@
           @click="goTo('saving-account')"
         >
           <div
-            class="bg-yellow-100 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
+            class="bg-indigo-50 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl md:bg-white lg:bg-white xl:bg-white"
           >
             <div
               style="z-index: 9999"
@@ -165,7 +165,7 @@
           @click="goTo('saving-account')"
         >
           <div
-            class="md:hidden lg:hidden xl:hidden bg-yellow-100 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl"
+            class="md:hidden lg:hidden xl:hidden bg-indigo-50 md:border-2 border-gray-200 lg:border-2 border-gray-200 xl:border-2 border-gray-200 px-0 md:px-4 lg:px-4 xl:px-4 py-2 rounded-lg bg-white md:shadow-xl lg:shadow-xl xl:shadow-xl"
           >
             <div style="z-index: 9999">
               <img src="/img/credit-score.png" class="w-16 h-16 mx-auto" />
