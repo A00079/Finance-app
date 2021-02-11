@@ -3,10 +3,8 @@
     <home />
     <credit-score />
     <our-products />
-    <div class="hidden md:block lg:block xl:block">
-      <why-us />
-      <about-us />
-    </div>
+    <why-us />
+    <about-us />
   </div>
 </template>
 <script>

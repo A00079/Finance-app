@@ -856,7 +856,7 @@
               </div>
             </div>
           </div>
-          <div class="py-6 px-5 space-y-6">
+          <div class="py-3 px-5 space-y-2">
             <div class="grid grid-cols-2 gap-y-4 gap-x-8">
               <a
                 href="#"
@@ -888,7 +888,7 @@
               >
                 Sign up
               </a>
-              <p class="mt-6 text-center text-base font-medium text-gray-500">
+              <p class="mt-2 text-center text-base font-medium text-gray-500">
                 Existing customer?
                 <a href="#" class="text-indigo-600 hover:text-indigo-500">
                   Sign in

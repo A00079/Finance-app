@@ -230,8 +230,8 @@
         />
       </div>
     </div>
-    <div class="md:hidden lg:hidden xl:hidden mt-3">
-      <div class="container px-5 py-24 mx-auto">
+    <div class="md:hidden lg:hidden xl:hidden">
+      <div class="container px-5 py-20 mx-auto">
         <div class="flex flex-col text-center w-full mb-3">
           <h2
             class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"
@@ -302,15 +302,19 @@
             <div class="flex w-full px-24 mx-auto rounded mt-6">
               <button
                 @click="toggleProduct('short')"
-                class="py-1 px-6 rounded border-2 border-indigo-500 mx-auto  focus:outline-none"
-                :class="shortProduct?'bg-indigo-500 text-white': 'text-gray-700'"
+                class="py-1 px-6 rounded border-2 border-indigo-500 mx-auto focus:outline-none"
+                :class="
+                  shortProduct ? 'bg-indigo-500 text-white' : 'text-gray-700'
+                "
               >
                 Short
               </button>
               <button
                 @click="toggleProduct('summary')"
-                class="py-1 border-2 rounded border-indigo-500  mx-auto px-4 focus:outline-none"
-                :class="summaryProduct?'bg-indigo-500 text-white': 'text-gray-700'"
+                class="py-1 border-2 rounded border-indigo-500 mx-auto px-4 focus:outline-none"
+                :class="
+                  summaryProduct ? 'bg-indigo-500 text-white' : 'text-gray-700'
+                "
               >
                 Summary
               </button>
@@ -333,29 +337,34 @@
                   <div
                     class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
                   >
-                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <img src="/img/healthcare.svg" class="w-10 h-10 mx-auto" />
                     <small class="text-gray-900 font-bold text-xs text-center"
-                      >Credit Card</small
+                      >Health Care</small
                     >
                   </div>
                   <div
                     class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
                   >
-                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <img src="/img/personalloan.png" class="w-10 h-10 mx-auto" />
                     <small class="text-gray-900 font-bold text-xs text-center"
-                      >Credit Card</small
+                      >Personal Loan</small
                     >
                   </div>
                   <div class="flex flex-col p-2">
-                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <img src="/img/homeloan.png" class="w-10 h-10 mx-auto" />
                     <small class="text-gray-900 font-bold text-xs text-center"
-                      >Credit Card</small
+                      >Home Loan</small
                     >
                   </div>
                 </div>
               </div>
               <div class="middle-panel">
-                <img src="/img/credit-card.svg" class="w-24 h-24" />
+                <div class="flex flex-col space-y-4 mx-auto">
+                  <p class="text-xl text-gray-700 text-center font-semibold">Credit Card</p>
+                  <div class="h-1 mx-auto w-20 bg-indigo-500 rounded"></div>
+                  <img src="/img/credit-card.svg" class="w-24 h-24 mx-auto" />
+                  <p class="text-sm text-gray-700 w-56 h-20 pl-4 font-semibold text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, animi quibusdam aspernatur placeat nulla, fugiat quasi, esse a nisi magnam totam earum aliquam.</p>
+                </div>
               </div>
               <div
                 class="right-panel bg-white -mr-5 rounded-md border-2 border-gray-200 shadow-xl"
@@ -364,31 +373,31 @@
                   <div
                     class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
                   >
-                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <img src="/img/lifeinsurance.png" class="w-10 h-10 mx-auto" />
                     <small class="text-gray-900 font-bold text-xs text-center"
-                      >Credit Card</small
+                      >Life Insurance</small
                     >
                   </div>
                   <div
                     class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
                   >
-                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <img src="/img/savings.png" class="w-10 h-10 mx-auto" />
                     <small class="text-gray-900 font-bold text-xs text-center"
-                      >Credit Card</small
+                      >Savings</small
                     >
                   </div>
                   <div
                     class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
                   >
-                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <img src="/img/homeloan.png" class="w-10 h-10 mx-auto" />
                     <small class="text-gray-900 font-bold text-xs text-center"
-                      >Credit Card</small
+                      >Mutual Funds</small
                     >
                   </div>
                   <div class="flex flex-col p-2">
-                    <img src="/img/credit-card.svg" class="w-10 h-10 mx-auto" />
+                    <img src="/img/growth.png" class="w-10 h-10 mx-auto" />
                     <small class="text-gray-900 font-bold text-xs text-center"
-                      >Credit Card</small
+                      >Demat Acct</small
                     >
                   </div>
                 </div>
@@ -565,16 +574,16 @@ export default {
       this.cardTitle = title;
       this.cardImg = img;
     },
-    toggleProduct(section){
-      if(section == 'short'){
+    toggleProduct(section) {
+      if (section == "short") {
         this.shortProduct = true;
         this.summaryProduct = false;
       }
-      if(section == 'summary'){
+      if (section == "summary") {
         this.shortProduct = false;
         this.summaryProduct = true;
       }
-    }
+    },
   },
 };
 </script>

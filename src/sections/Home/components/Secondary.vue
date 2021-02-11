@@ -151,7 +151,7 @@
             <p
               class="md:hidden lg:hidden xl:hidden leading-relaxed font-bold text-gray-900 text-sm"
             >
-              Saving Account
+              Saving Acct
             </p>
             <p
               class="hidden md:block lg:block xl:block leading-relaxed font-bold"

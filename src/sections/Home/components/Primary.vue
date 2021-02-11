@@ -75,10 +75,10 @@
       </div>
     </div>
     <div
-      class="md:hidden lg:hidden xl:hidden container mx-auto px-6 mobile-view-home-screen"
+      class="md:hidden lg:hidden xl:hidden container mx-auto px-6 mobile-view-home-screen relative"
     >
       <div class="flex flex-col">
-        <div class="animation-content bg-indigo-100 py-3 rounded-b-3xl">
+        <div class="animation-content bg-transparent py-3 rounded-b-3xl">
           <div>
             <!-- <lottie
               :options="defaultOptions"
@@ -135,6 +135,7 @@
           </div>
         </div>
       </div>
+      <img src="/img/home-curve.png" class="absolute -top-3 left-0" style="z-index: -1;" />
     </div>
   </section>
 </template>

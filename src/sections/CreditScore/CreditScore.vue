@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      class="text-gray-600 body-font static h-screen md:relative lg:relative xl:relative"
+      class="text-gray-600 body-font static md:h-screen lg:h-screen xl:h-screen md:relative lg:relative xl:relative"
       v-view.once="onceHandler"
     >
       <div
@@ -9,7 +9,7 @@
         :key="rerender"
       >
         <div
-          class="flex flex-col text-center w-full mb-10 md:mb-20 lg:mb-20 xl:mb-20"
+          class="flex flex-col text-center w-full mb-16 md:mb-20 lg:mb-20 xl:mb-20"
         >
           <h1
             class="text-2xl md:text-4xl font-medium title-font mb-4 text-indigo-900"
@@ -180,7 +180,7 @@
       <img
         style="z-index: -1"
         src="/img/leftwave.png"
-        class="absolute top-0 -left-10"
+        class="absolute top-0 -left-10 hidden md:block lg:block xl:block"
       />
     </section>
   </div>
