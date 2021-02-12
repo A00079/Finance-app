@@ -10,7 +10,9 @@ import VueScrollReveal from "vue-scroll-reveal";
 import Donut from 'vue-css-donut-chart';
 import 'vue-css-donut-chart/dist/vcdonut.css';
 import RadialProgressBar from 'vue-radial-progress'
+import CardSlider from '@/components/CardSlider/CardSlider.vue';
 
+Vue.component("card-slider", CardSlider);
 Vue.component("radial-progress-bar", RadialProgressBar);
 Vue.use(Donut);
 

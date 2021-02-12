@@ -3,6 +3,7 @@
     <home />
     <credit-score />
     <our-products />
+    <big-adsBanner />
     <why-us />
     <about-us />
   </div>
@@ -16,6 +17,7 @@ import {
   WhyUs,
   AboutUs,
   Testimonials,
+  BigAdsBanner
 } from "../sections";
 
 export default {
@@ -27,6 +29,7 @@ export default {
     WhyUs: WhyUs,
     AboutUs: AboutUs,
     Testimonials: Testimonials,
+    BigAdsBanner:BigAdsBanner
   },
 };
 </script>

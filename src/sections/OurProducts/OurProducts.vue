@@ -232,6 +232,37 @@
     </div>
     <div class="md:hidden lg:hidden xl:hidden">
       <div class="container px-5 py-20 mx-auto">
+        <div class="p-2 mb-20 w-full">
+          <div
+            class="h-full bg-indigo-600 py-3 flex items-center border-2 border-indigo-500 rounded-tl-md rounded-bl-md rounded-br-3xl rounded-tr-md"
+          >
+            <div class="flex-grow ml-6">
+              <h2 class="text-white title-font font-medium">
+                Holden Caulfield
+              </h2>
+              <p class="text-white">UI Designer</p>
+            </div>
+            <button class="py-3 px-3 mr-5 bg-white rounded-xl">
+              <svg
+                class="w-4 h-4 text-pink-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="flex flex-col text-center w-full mb-3">
           <h2
             class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"
@@ -299,25 +330,31 @@
               Williamsburg occupy sustainable snackwave gochujang. Pinterest
               cornhole brunch, slow-carb neutra irony.
             </p>
-            <div class="flex w-full px-24 mx-auto rounded mt-6">
-              <button
-                @click="toggleProduct('short')"
-                class="py-1 px-6 rounded border-2 border-indigo-500 mx-auto focus:outline-none"
-                :class="
-                  shortProduct ? 'bg-indigo-500 text-white' : 'text-gray-700'
-                "
+            <div class="flex flex-row justify-center mt-4">
+              <div
+                class="border-2 border-indigo-500 rounded-tl-md rounded-bl-2xl rounded-br-md rounded-tr-2xl"
               >
-                Short
-              </button>
-              <button
-                @click="toggleProduct('summary')"
-                class="py-1 border-2 rounded border-indigo-500 mx-auto px-4 focus:outline-none"
-                :class="
-                  summaryProduct ? 'bg-indigo-500 text-white' : 'text-gray-700'
-                "
-              >
-                Summary
-              </button>
+                <button
+                  @click="toggleProduct('short')"
+                  class="py-1 px-6 rounded focus:outline-none rounded-tl-md rounded-bl-2xl"
+                  :class="
+                    shortProduct ? 'bg-indigo-500 text-white' : 'text-gray-700'
+                  "
+                >
+                  Short
+                </button>
+                <button
+                  @click="toggleProduct('summary')"
+                  class="py-1 rounded px-6 focus:outline-none rounded-tr-2xl rounded-br-md"
+                  :class="
+                    summaryProduct
+                      ? 'bg-indigo-500 text-white'
+                      : 'text-gray-700'
+                  "
+                >
+                  Summary
+                </button>
+              </div>
             </div>
           </div>
           <div class="summary-product" v-show="summaryProduct">
@@ -345,7 +382,10 @@
                   <div
                     class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
                   >
-                    <img src="/img/personalloan.png" class="w-10 h-10 mx-auto" />
+                    <img
+                      src="/img/personalloan.png"
+                      class="w-10 h-10 mx-auto"
+                    />
                     <small class="text-gray-900 font-bold text-xs text-center"
                       >Personal Loan</small
                     >
@@ -360,10 +400,17 @@
               </div>
               <div class="middle-panel">
                 <div class="flex flex-col space-y-4 mx-auto">
-                  <p class="text-xl text-gray-700 text-center font-semibold">Credit Card</p>
+                  <p class="text-xl text-gray-700 text-center font-semibold">
+                    Credit Card
+                  </p>
                   <div class="h-1 mx-auto w-20 bg-indigo-500 rounded"></div>
                   <img src="/img/credit-card.svg" class="w-24 h-24 mx-auto" />
-                  <p class="text-sm text-gray-700 w-56 h-20 pl-4 font-semibold text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, animi quibusdam aspernatur placeat nulla, fugiat quasi, esse a nisi magnam totam earum aliquam.</p>
+                  <p
+                    class="text-sm text-gray-700 w-56 h-20 pl-4 font-semibold text-center"
+                  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Labore, animi quibusdam aspernatur placeat nulla.
+                  </p>
                 </div>
               </div>
               <div
@@ -373,7 +420,10 @@
                   <div
                     class="flex flex-col p-2 border-b-2 border-dashed border-gray-200"
                   >
-                    <img src="/img/lifeinsurance.png" class="w-10 h-10 mx-auto" />
+                    <img
+                      src="/img/lifeinsurance.png"
+                      class="w-10 h-10 mx-auto"
+                    />
                     <small class="text-gray-900 font-bold text-xs text-center"
                       >Life Insurance</small
                     >
