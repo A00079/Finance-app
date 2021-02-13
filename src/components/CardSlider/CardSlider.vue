@@ -5,7 +5,7 @@
         class="swiper-slide bg-yellow-300 rounded-xl"
         v-for="(item, index) in cardData"
         :key="index + 'card'"
-        :style="{ width: cardwidth + 'px', height: cardheight + 'px' }"
+        :style="{ width: cardwidth + 'px', height: cardheight + 'px', background: cardbackground +' !important' }"
       >
         <div class="container px-2 mx-auto">
           <div class="flex flex-col">
@@ -22,7 +22,7 @@
 <script>
 export default {
   name: "CardSlider",
-  props: ["cardcount", "cardwidth", "cardheight", "hidePagination", "cardData","slidesPerView","spaceBetween","showsPagination","centeredSlides","allowTouchMove"],
+  props: ["cardcount", "cardwidth","cardbackground", "cardheight", "hidePagination", "cardData","slidesPerView","spaceBetween","showsPagination","centeredSlides","allowTouchMove"],
   data() {
     return {};
   },

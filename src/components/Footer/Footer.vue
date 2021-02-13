@@ -7,8 +7,8 @@
         >
           Our Patners
         </h4>
-        <div class="flex flex-wrap">
-          <div class="p-2 w-1/3">
+        <div class="flex flex-wrap justify-around">
+          <div class="p-2">
             <div class="h-12 w-28 flex items-center bg-gray-900 p-2 rounded-lg">
               <div class="flex-grow">
                 <h2 class="text-gray-100 text-center title-font font-medium">
@@ -17,7 +17,7 @@
               </div>
             </div>
           </div>
-          <div class="p-2 w-1/3">
+          <div class="p-2">
             <div class="h-12 w-28 flex items-center bg-gray-900 p-2 rounded-lg">
               <div class="flex-grow">
                 <h2 class="text-gray-100 text-center title-font font-medium">
@@ -26,7 +26,7 @@
               </div>
             </div>
           </div>
-          <div class="p-2 w-1/3">
+          <div class="p-2">
             <div class="h-12 w-28 flex items-center bg-gray-900 p-2 rounded-lg">
               <div class="flex-grow">
                 <h2 class="text-gray-100 text-center title-font font-medium">
@@ -35,7 +35,7 @@
               </div>
             </div>
           </div>
-          <div class="p-2 w-1/3">
+          <div class="p-2">
             <div class="h-12 w-28 flex items-center bg-gray-900 p-2 rounded-lg">
               <div class="flex-grow">
                 <h2 class="text-gray-100 text-center title-font font-medium">
@@ -44,7 +44,7 @@
               </div>
             </div>
           </div>
-          <div class="p-2 w-1/3">
+          <div class="p-2">
             <div class="h-12 w-28 flex items-center bg-gray-900 p-2 rounded-lg">
               <div class="flex-grow">
                 <h2 class="text-gray-100 text-center title-font font-medium">
@@ -53,7 +53,7 @@
               </div>
             </div>
           </div>
-          <div class="p-2 w-1/3">
+          <div class="p-2">
             <div class="h-12 w-28 flex items-center bg-gray-900 p-2 rounded-lg">
               <div class="flex-grow">
                 <h2 class="text-gray-100 text-center title-font font-medium">
@@ -62,7 +62,7 @@
               </div>
             </div>
           </div>
-          <div class="p-2 w-1/3">
+          <div class="p-2">
             <div class="h-12 w-28 flex items-center bg-gray-900 p-2 rounded-lg">
               <div class="flex-grow">
                 <h2 class="text-gray-100 text-center title-font font-medium">
@@ -71,7 +71,7 @@
               </div>
             </div>
           </div>
-          <div class="p-2 w-1/3">
+          <div class="p-2">
             <div class="h-12 w-28 flex items-center bg-gray-900 p-2 rounded-lg">
               <div class="flex-grow">
                 <h2 class="text-gray-100 text-center title-font font-medium">
