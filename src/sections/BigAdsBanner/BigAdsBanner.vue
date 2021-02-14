@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="md:hidden lg:hidden xl:hidden">
     <div class="container px-5 py-2 mx-auto">
       <div class="flex flex-col text-center w-full">
         <h2
@@ -14,7 +14,7 @@
         </h1>
       </div>
     </div>
-    <div class="p-2 w-full  px-14">
+    <div class="p-2 w-full px-14">
       <div
         class="h-full flex items-center bg-indigo-100 border-gray-200 shadow-xl border p-4 rounded-2xl"
       >
@@ -68,6 +68,7 @@
         :slidesPerView="2"
         :centeredSlides="true"
         :allowTouchMove="true"
+        :containerModifierClass="false"
       />
     </div>
   </section>

@@ -460,6 +460,9 @@
           </div>
         </section>
         <CreditScore />
+        <TypesOfCreditCard />
+        <ListOfCreditCards />
+        <CreditLimit />
       </div>
     </div>
   </div>

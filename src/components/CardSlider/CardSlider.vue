@@ -2,10 +2,11 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div
-        class="swiper-slide bg-yellow-300 rounded-xl"
+        class="swiper-slide bg-yellow-300"
+        :class="!!cardRoundClass?cardRoundClass:'rounded-xl'"
         v-for="(item, index) in cardData"
         :key="index + 'card'"
-        :style="{ width: cardwidth + 'px', height: cardheight + 'px', background: cardbackground +' !important' }"
+        :style="{ width: cardwidth + 'px !important', height: cardheight + 'px', background: cardbackground +' !important' }"
       >
         <div class="container px-2 mx-auto">
           <div class="flex flex-col">
@@ -22,12 +23,13 @@
 <script>
 export default {
   name: "CardSlider",
-  props: ["cardcount", "cardwidth","cardbackground", "cardheight", "hidePagination", "cardData","slidesPerView","spaceBetween","showsPagination","centeredSlides","allowTouchMove"],
+  props: ["cardcount","cardRoundClass", "cardwidth","cardbackground", "cardheight", "hidePagination", "cardData","slidesPerView","spaceBetween","showsPagination","centeredSlides","allowTouchMove","containerModifierClass"],
   data() {
     return {};
   },
   mounted() {
     new Swiper(".swiper-container", {
+      containerModifierClass: this.containerModifierClass,
       slidesPerView: this.slidesPerView,
       spaceBetween: this.spaceBetween,
       showsPagination: this.showsPagination,
@@ -43,7 +45,7 @@ export default {
   height: 100%;
 }
 .swiper-slide {
-  width: 160px !important;
+  /* width: 160px !important; */
   height: 110px;
 }
 </style>

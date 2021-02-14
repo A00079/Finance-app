@@ -573,7 +573,10 @@
     <div
       class="mobile-apply-online-creditcard md:hidden lg:hidden xl:hidden mt-10"
     >
-      <div class="rounded-t-3xl -mx-4" style="background: #0810b3">
+      <div
+        class="rounded-t-3xl -mx-4"
+        style="background: #0810b3; height: 157vh"
+      >
         <div class="container px-1 py-10 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
             <h2
@@ -622,16 +625,19 @@
               </div>
               <div class="mt-14">
                 <card-slider
+                  key="card-484884"
+                  :cardkey="'card-1' + 2"
                   :cardcount="7"
                   :cardheight="110"
                   :cardwidth="160"
                   :spaceBetween="20"
-                  :showsPagination="true"
+                  :showsPagination="false"
                   :cardData="featureDetails"
                   :slidesPerView="2"
                   :centeredSlides="true"
                   :allowTouchMove="true"
                   cardbackground="#262DBC"
+                  :containerModifierClass="false"
                 />
               </div>
               <div class="apply-online-credit-card mt-16">
@@ -683,57 +689,218 @@
                       </div>
                     </div>
                     <div class="apply-online-screen mt-6">
-                      <div
-                        class="flex flex-row space-x-5 mx-auto justify-center w-full"
-                      >
+                      <div class="steps-section" v-show="stepsScreen">
                         <div
-                          class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
+                          class="flex flex-row space-x-5 mx-auto justify-center w-full"
                         >
-                          <p class="text-xm font-bold text-white mt-2">1</p>
+                          <div
+                            class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
+                          >
+                            <p class="text-xm font-bold text-white mt-2">1</p>
+                          </div>
+                          <div
+                            class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
+                          >
+                            <p class="text-xm font-bold text-white mt-2">2</p>
+                          </div>
+                          <div
+                            class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
+                          >
+                            <p class="text-xm font-bold text-white mt-2">3</p>
+                          </div>
+                          <div
+                            class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
+                          >
+                            <p class="text-xm font-bold text-white mt-2">4</p>
+                          </div>
+                          <div
+                            class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
+                          >
+                            <p class="text-xm font-bold text-white mt-2">5</p>
+                          </div>
+                          <div
+                            class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
+                          >
+                            <p class="text-xm font-bold text-white mt-2">6</p>
+                          </div>
                         </div>
-                        <div
-                          class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
-                        >
-                          <p class="text-xm font-bold text-white mt-2">2</p>
-                        </div>
-                        <div
-                          class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
-                        >
-                          <p class="text-xm font-bold text-white mt-2">3</p>
-                        </div>
-                        <div
-                          class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
-                        >
-                          <p class="text-xm font-bold text-white mt-2">4</p>
-                        </div>
-                        <div
-                          class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
-                        >
-                          <p class="text-xm font-bold text-white mt-2">5</p>
-                        </div>
-                        <div
-                          class="w-10 h-10 bg-yellow-600 object-cover object-center flex-shrink-0 rounded-xl"
-                        >
-                          <p class="text-xm font-bold text-white mt-2">6</p>
+                        <div class="step-animation">
+                          <div class="flex flex-col space-y-4">
+                            <div class="animation-lottie">
+                              <lottie
+                                :options="defaultOptions"
+                                :height="300"
+                                :width="350"
+                                v-on:animCreated="handleAnimation"
+                              />
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                              <div class="text-3xl text-indigo-700 font-bold">
+                                Step 1
+                              </div>
+                              <div class="text-md font-bold text-gray-500">
+                                Log in to xyz.com
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="step-animation">
-                      <div class="flex flex-col space-y-4">
-                        <div class="animation-lottie">
-                          <lottie
-                            :options="defaultOptions"
-                            :height="300"
-                            :width="350"
-                            v-on:animCreated="handleAnimation"
-                          />
-                        </div>
-                        <div class="flex flex-col space-y-2">
-                          <div class="text-3xl text-indigo-700 font-bold">
-                            Step 1
+                      <div class="documents-section" v-show="documentsScreen">
+                        <div class="text-center">
+                          <h1
+                            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1"
+                          >
+                            Documents Required
+                          </h1>
+                          <p
+                            class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"
+                          >
+                            Below is the list of dicuments required for credit
+                            authentication.
+                          </p>
+                          <div class="flex mt-3 justify-center">
+                            <div
+                              class="w-28 h-1 rounded-full bg-indigo-700 inline-flex"
+                            ></div>
                           </div>
-                          <div class="text-md font-bold text-gray-500">
-                            Log in to xyz.com
+                        </div>
+                        <div class="heading-tabs-for-documents mt-6">
+                          <div
+                            class="flex flex-row justify-center space-x-3 px-3 w-full"
+                          >
+                            <div class="flex flex-col space-y-2">
+                              <div
+                                class="text-xs bg-indigo-100 py-2 px-2 rounded-md text-gray-600 font-extrabold text-center"
+                              >
+                                Identity Proof(Anyone)
+                              </div>
+                              <div class="head-img text-center">
+                                <div
+                                  class="w-16 h-16 bg-white mx-auto text-center object-cover object-center flex-shrink-0 rounded-xl"
+                                  style="background: #e67e22"
+                                ></div>
+                              </div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                              <div
+                                class="text-xs bg-indigo-100 py-2 px-2 rounded-md text-gray-600 font-extrabold text-center"
+                              >
+                                Address Proof
+                              </div>
+                              <div class="head-img text-center">
+                                <div
+                                  class="w-16 h-16 bg-white mx-auto text-center object-cover object-center flex-shrink-0 rounded-xl"
+                                  style="background: #e67e22"
+                                ></div>
+                              </div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                              <div
+                                class="text-xs bg-indigo-100 py-2 px-2 rounded-md text-gray-600 font-extrabold text-center"
+                              >
+                                Financial Documents
+                              </div>
+                              <div class="head-img text-center">
+                                <div
+                                  class="w-16 h-16 bg-white text-center mx-auto object-cover object-center flex-shrink-0 rounded-xl"
+                                  style="background: #e67e22"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-slider-for-documents mt-10">
+                          <div class="px-4">
+                            <h1
+                              class="text-1xl font-bold text-left title-font mb-4 text-gray-700"
+                            >
+                              List Of Documents Required
+                            </h1>
+                            <div class="flex mt-4 justify-start">
+                              <div
+                                class="w-24 h-1 rounded-full bg-white inline-flex"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="w-full">
+                            <div class="flex flex-col w-full mx-auto">
+                              <div class="p-2 w-full">
+                                <div
+                                  class="h-full flex flex-row items-center border-b-2 border-gray-300 p-2 border-dashed"
+                                >
+                                  <img
+                                    alt="team"
+                                    class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 mr-0"
+                                    src="https://dummyimage.com/80x80"
+                                  />
+                                  <div class="flex-grow">
+                                    <h2
+                                      class="text-gray-900 title-font font-medium"
+                                    >
+                                      Adhaar Card
+                                    </h2>
+                                    <p class="text-gray-500">UI Designer</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="p-2 w-full">
+                                <div
+                                  class="h-full flex flex-row items-center border-b-2 border-gray-300 p-2 border-dashed"
+                                >
+                                  <img
+                                    alt="team"
+                                    class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 mr-0"
+                                    src="https://dummyimage.com/80x80"
+                                  />
+                                  <div class="flex-grow">
+                                    <h2
+                                      class="text-gray-900 title-font font-medium"
+                                    >
+                                      Adhaar Card
+                                    </h2>
+                                    <p class="text-gray-500">UI Designer</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="p-2 w-full">
+                                <div
+                                  class="h-full flex flex-row items-center border-b-2 border-gray-300 p-2 border-dashed"
+                                >
+                                  <img
+                                    alt="team"
+                                    class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 mr-0"
+                                    src="https://dummyimage.com/80x80"
+                                  />
+                                  <div class="flex-grow">
+                                    <h2
+                                      class="text-gray-900 title-font font-medium"
+                                    >
+                                      Adhaar Card
+                                    </h2>
+                                    <p class="text-gray-500">UI Designer</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="p-2 w-full">
+                                <div
+                                  class="h-full flex flex-row items-center p-2 border-dashed"
+                                >
+                                  <img
+                                    alt="team"
+                                    class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 mr-0"
+                                    src="https://dummyimage.com/80x80"
+                                  />
+                                  <div class="flex-grow">
+                                    <h2
+                                      class="text-gray-900 title-font font-medium"
+                                    >
+                                      Adhaar Card
+                                    </h2>
+                                    <p class="text-gray-500">UI Designer</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>

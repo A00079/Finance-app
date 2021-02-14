@@ -7,7 +7,7 @@
     >
       <router-link to="/">
         <img
-          class="h-8 w-auto sm:h-10 pl-7 mt-5 md:pl-0 mt-0 lg:pl-0 mt-0 xl:pl-0 mt-0"
+          class="h-8 w-auto sm:h-10 pl-7 mt-5 md:ml-5 mt-0 lg:pl-0 mt-0 xl:pl-0 mt-0"
           src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
           alt=""
         />

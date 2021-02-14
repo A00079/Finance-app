@@ -7,12 +7,12 @@
         Credit Card Limit
       </h2>
       <h1
-        class="sm:text-3xl md:text-3xl font-bold title-font mb-4 text-indigo-900"
+        class="text-2xl md:text-3xl font-bold title-font mb-4 text-indigo-900"
       >
         HOW TO INCREASE CREDIT CARD LIMIT
       </h1>
       <p
-        class="w-full mx-auto px-28 leading-relaxed text-base text-gray-600 font-semibold"
+        class="w-full mx-auto md:px-28 lg:px-28 xl:px-28 px-4 leading-relaxed text-base text-gray-600 font-semibold"
       >
         Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
         gentrify, subway tile poke farm-to-table. Franzen you probably haven't
@@ -21,7 +21,7 @@
       </p>
     </div>
     <div class="Limit-section">
-      <div class="flex flex-row">
+      <div class="w-full md:flex flex-row lg:flex flex-row xl:flex flex-row">
         <div class="animation-limit">
             <img src="/img/creditlimit.jpg" style="width:900px" />
         </div>
