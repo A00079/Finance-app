@@ -34,7 +34,7 @@
       class="mobile-whatis-credit-card md:hidden lg:hidden xl:hidden mt-10 -mx-5"
     >
       <div
-        class="bg-white shadow-xl border-2 border-gray-100 px-4 rounded-t-3xl"
+        class="bg-white px-4 rounded-t-3xl"
       >
         <p class="text-sm text-indigo-700 text-left font-extrabold pt-4">
           What is Credit Card?

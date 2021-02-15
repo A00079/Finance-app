@@ -575,12 +575,12 @@
     >
       <div
         class="rounded-t-3xl -mx-4"
-        style="background: #0810b3; height: 157vh"
+        style="background: #0810b3;"
       >
-        <div class="container px-1 py-10 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
+        <div class="container px-1 py-0 mx-auto">
+          <div class="flex flex-col text-center w-full">
             <h2
-              class="text-xs text-white tracking-widest font-medium title-font mb-1"
+              class="text-xs text-white tracking-widest mt-10 font-medium title-font mb-1"
             >
               Total Cards
             </h2>

@@ -148,7 +148,7 @@
       </div>
     </div>
     <div class="mobile-credit-range mt-24 md:hidden lg:hidden xl:hidden">
-      <div class="container px-5 py-6 mx-auto rounded-t-3xl" style="background:#0810B3">
+      <div class="container px-5 py-0 mx-auto rounded-t-3xl" style="background:#0810B3">
         <div class="flex flex-col text-center w-full mb-4">
           <h2
             class="text-xs text-white tracking-widest font-medium title-font mb-1 text-left"

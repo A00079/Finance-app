@@ -270,12 +270,12 @@
     </div>
     <div class="mobile-list-credit-card md:hidden lg:hidden xl:hidden mt-16">
       <div
-        class="container px-5 py-6 mx-auto rounded-t-3xl"
+        class="container px-5 py-0 mx-auto rounded-t-3xl"
         style="background: #0810b3"
       >
-        <div class="px-4 mt-12">
+        <div class="px-4 pt-12 mt-10">
           <h2
-            class="text-xs text-white text-center tracking-widest font-medium title-font mb-1"
+            class="text-xs text-white text-center  tracking-widest font-medium title-font mb-1"
           >
             Rate List
           </h2>
