@@ -1,18 +1,18 @@
 <template>
-  <div class="container px-5 py-8 mt-24 mx-auto">
+  <div class="container px-5 py-8 mx-auto mt-16">
     <div class="flex flex-col text-center w-full mb-6">
       <h2
         class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"
       >
-        DEMAT APPLICATION
+        DEMAT ACCOUNT
       </h2>
       <h1
-        class="sm:text-3xl md:text-3xl font-bold title-font mb-4 text-indigo-900"
+        class="text-2xl md:text-3xl font-bold title-font mb-4 text-indigo-900"
       >
-        STEPS INVOLVED IN DEMAT APPLICATION
+        STEPS INVOLVED IN DEMAT ACCOUNT
       </h1>
       <p
-        class="w-full mx-auto px-28 leading-relaxed text-base text-gray-600 font-semibold"
+        class="w-full mx-auto md:px-28 lg:px-28 xl:px-28 px-4 leading-relaxed text-base text-gray-600 font-semibold"
       >
         Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
         gentrify, subway tile poke farm-to-table. Franzen you probably haven't
@@ -21,7 +21,7 @@
       </p>
     </div>
     <div class="Limit-section">
-      <div class="flex flex-row">
+      <div class="w-full md:flex flex-row lg:flex flex-row xl:flex flex-row">
         <div class="animation-limit">
             <img src="/img/creditlimit.jpg" style="width:900px" />
         </div>
