@@ -12,9 +12,11 @@ import 'vue-css-donut-chart/dist/vcdonut.css';
 import RadialProgressBar from 'vue-radial-progress'
 import CardSlider from '@/components/CardSlider/CardSlider.vue';
 import PieChartCardSlider from '@/components/CardSlider/PieChartCardSlider.vue';
+import OnlyPieChartCardSlider from '@/components/CardSlider/OnlyPieChartSlider.vue';
 import Trend from "vuetrend"
  
 Vue.use(Trend)
+Vue.component("only-pie-chart-slider", OnlyPieChartCardSlider);
 Vue.component("pie-chart-card-slider", PieChartCardSlider);
 Vue.component("card-slider", CardSlider);
 Vue.component("radial-progress-bar", RadialProgressBar);
