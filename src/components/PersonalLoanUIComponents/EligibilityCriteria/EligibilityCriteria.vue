@@ -209,8 +209,8 @@
           </div>
         </div>
         <div class="eligibilty-points">
-          <div class="flex flex-col">
-            <div class="p-0 w-full">
+          <div class="flex flex-col space-y-2">
+            <div class="p-0 w-full bg-indigo-50 rounded-md">
               <div
                 class="h-full flex items-center p-2 rounded-lg"
               >
@@ -227,7 +227,7 @@
                 </div>
               </div>
             </div>
-            <div class="p-0 w-full">
+            <div class="p-0 w-full bg-indigo-50 rounded-md">
               <div
                 class="h-full flex items-center p-2 rounded-lg"
               >
@@ -244,7 +244,7 @@
                 </div>
               </div>
             </div>
-            <div class="p-0 w-full">
+            <div class="p-0 w-full bg-indigo-50 rounded-md">
               <div
                 class="h-full flex items-center p-2 rounded-lg"
               >

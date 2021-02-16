@@ -463,6 +463,10 @@
         <CurrentPersonalLoanRate />
         <WhatIsPersonalLoan />
         <EligibilityCriteria />
+        <BenefitsApplyingPersonaLoan />
+        <ApplyOnlinePersonalLoan />
+        <FactorsAffecting />
+        <BenefitsOfPersonalLoan />
       </div>
     </div>
   </div>
