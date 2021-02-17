@@ -460,8 +460,8 @@
         </section>
         <SavingAccountCharges />
         <WhatIsSavingAccount />
-        <!-- <SavingKeyFeatures /> -->
-        <!-- <TypesOfBankAccount /> -->
+        <SavingKeyFeatures />
+        <TypesOfBankAccount />
         <TypesOfSavingAccount />
       </div>
     </div>
