@@ -461,6 +461,7 @@
         </section>
         <CreditScore />
         <TypesOfCreditCard />
+        <DynamicDataListing />
         <ListOfCreditCards />
         <CreditLimit />
       </div>
@@ -468,6 +469,7 @@
   </div>
 </template>
 <script>
+import DynamicDataListing from "@/components/DynamicDataListing/DynamicDataListing.vue";
 import CreditLimit from "@/components/CreditLimit/CreditLimit.vue";
 import ListOfCreditCards from "@/components/ListOfCreditCards/ListOfCreditCards.vue";
 import BenefitsOfCreditCard from "@/components/BenefitsOfCreditCard/BenefitsOfCreditCard.vue";
@@ -492,6 +494,7 @@ export default {
     CreditScore,
     CreditOnlineDocuments,
     TypesOfCreditCard,
+    DynamicDataListing,
     BenefitsOfCreditCard,
     ListOfCreditCards,
     CreditLimit,
