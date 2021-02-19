@@ -13,8 +13,17 @@ import RadialProgressBar from 'vue-radial-progress'
 import CardSlider from '@/components/CardSlider/CardSlider.vue';
 import PieChartCardSlider from '@/components/CardSlider/PieChartCardSlider.vue';
 import OnlyPieChartCardSlider from '@/components/CardSlider/OnlyPieChartSlider.vue';
-import Trend from "vuetrend"
- 
+import Trend from "vuetrend";
+// import { ValidationProvider } from 'vee-validate';
+import {
+  ValidationProvider,
+  ValidationObserver,
+} from 'vee-validate/dist/vee-validate.full';
+import './utils/validationsRules/veeValidations.js';
+// Register it globally
+// main.js or any entry file.
+Vue.component('ValidationObserver', ValidationObserver);
+Vue.component('ValidationProvider', ValidationProvider);
 Vue.use(Trend)
 Vue.component("only-pie-chart-slider", OnlyPieChartCardSlider);
 Vue.component("pie-chart-card-slider", PieChartCardSlider);

@@ -461,6 +461,7 @@
         <SavingAccountCharges />
         <WhatIsSavingAccount />
         <SavingKeyFeatures />
+        <DynamicDataListing />
         <TypesOfBankAccount />
         <TypesOfSavingAccount />
       </div>
@@ -468,6 +469,7 @@
   </div>
 </template>
 <script>
+import DynamicDataListing from "@/components/DynamicDataListing/DynamicDataListing.vue";
 import SavingAccountCharges from "@/components/SavingAccountUIComponents/SavingAccountCharges/SavingAccountCharges.vue";
 import WhatIsSavingAccount from "@/components/SavingAccountUIComponents/WhatIsSavingAccount/WhatIsSavingAccount.vue";
 import SavingKeyFeatures from "@/components/SavingAccountUIComponents/SavingKeyFeatures/SavingKeyFeatures.vue";
@@ -491,6 +493,7 @@ export default {
     WhatIsSavingAccount,
     SavingKeyFeatures,
     TypesOfBankAccount,
+    DynamicDataListing,
     TypesOfSavingAccount,
   },
   mounted() {

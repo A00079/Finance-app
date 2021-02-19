@@ -461,6 +461,7 @@
         <DematAccountCharges />
         <WhatIsDematAccount />
         <ApplyOnlineDematAccount />
+        <DynamicDataListing />
         <StepsInvolvedDematAccount />
         <BenefitsOfDematAccount />
       </div>
@@ -468,6 +469,7 @@
   </div>
 </template>
 <script>
+import DynamicDataListing from "@/components/DynamicDataListing/DynamicDataListing.vue";
 import DematAccountCharges from "@/components/DematAccountUIComponents/DematAccountCharges/DematAccountCharges.vue";
 import WhatIsDematAccount from "@/components/DematAccountUIComponents/WhatIsDemateAccount/WhatIsDemateAccount.vue";
 import ApplyOnlineDematAccount from "@/components/DematAccountUIComponents/ApplyOnlineDematAccount/ApplyOnlineDematAccount.vue";
@@ -491,6 +493,7 @@ export default {
     DematAccountCharges,
     WhatIsDematAccount,
     ApplyOnlineDematAccount,
+    DynamicDataListing,
     StepsInvolvedDematAccount,
     BenefitsOfDematAccount,
   },

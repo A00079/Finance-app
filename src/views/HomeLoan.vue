@@ -465,6 +465,7 @@
         <EligibilityCriteria />
         <BenefitsApplyingHomeLoan />
         <ApplyOnlineHomeLoan />
+        <DynamicDataListing />
         <FactorsAffecting />
         <BenefitsOfHomeLoan />
       </div>
@@ -472,6 +473,7 @@
   </div>
 </template>
 <script>
+import DynamicDataListing from "@/components/DynamicDataListing/DynamicDataListing.vue";
 import CurrentHomeLoanRate from "@/components/HomeLoanUIComponents/CurrentLoanRate/CurrentHomeLoanRate.vue";
 import WhatIsHomeLoan from "@/components/HomeLoanUIComponents/WhatIsHomeLoan/WhatIsHomeLoan.vue";
 import EligibilityCriteria from "@/components/HomeLoanUIComponents/EligibilityCriteria/EligibilityCriteria.vue";
@@ -498,6 +500,7 @@ export default {
     EligibilityCriteria,
     BenefitsApplyingHomeLoan,
     ApplyOnlineHomeLoan,
+    DynamicDataListing,
     FactorsAffecting,
     BenefitsOfHomeLoan,
   },

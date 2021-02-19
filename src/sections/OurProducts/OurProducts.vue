@@ -406,7 +406,7 @@
                   <div class="h-1 mx-auto w-20 bg-indigo-500 rounded"></div>
                   <img src="/img/credit-card.svg" class="w-24 h-24 mx-auto" />
                   <p
-                    class="text-sm text-gray-700 w-56 h-20 pl-4 font-semibold text-center"
+                    class="text-sm text-gray-700 w-full h-20 pl-7 px-2 font-semibold text-center"
                   >
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Labore, animi quibusdam aspernatur placeat nulla.

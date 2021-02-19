@@ -465,6 +465,7 @@
         <EligibilityCriteria />
         <BenefitsApplyingPersonaLoan />
         <ApplyOnlinePersonalLoan />
+        <DynamicDataListing />
         <FactorsAffecting />
         <BenefitsOfPersonalLoan />
       </div>
@@ -472,6 +473,7 @@
   </div>
 </template>
 <script>
+import DynamicDataListing from "@/components/DynamicDataListing/DynamicDataListing.vue";
 import BenefitsApplyingPersonaLoan from "@/components/PersonalLoanUIComponents/BenefitsApplyingPersonaLoan/BenefitsApplyingPersonaLoan.vue";
 import FactorsAffecting from "@/components/PersonalLoanUIComponents/FactorsAffecting/FactorsAffecting.vue";
 import EligibilityCriteria from "@/components/PersonalLoanUIComponents/EligibilityCriteria/EligibilityCriteria.vue";
@@ -498,6 +500,7 @@ export default {
     ApplyOnlinePersonalLoan,
     BenefitsOfPersonalLoan,
     EligibilityCriteria,
+    DynamicDataListing,
     FactorsAffecting,
     BenefitsApplyingPersonaLoan,
   },
